@@ -1,9 +1,9 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.navbar {
+ }
+ .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,39 +15,39 @@
   background-color: #ffffff;
   z-index: 1000;
   height: 5em;
-}
-.podcast-text {
+ }
+ .podcast-text {
   flex: 1;
-}
-.navlogo {
+ }
+ .navlogo {
   height: 5em;
-}
-.navlogo.mob > img {
+ }
+ .navlogo.mob > img {
   height: unset;
-}
-.navlogo.mob {
+ }
+ .navlogo.mob {
   height: unset;
-}
-.navlogo > img {
+ }
+ .navlogo > img {
   height: 100%;
-}
-
-.menu {
+ }
+ 
+ .menu {
   display: flex;
-}
-
-.menu ul {
+ }
+ 
+ .menu ul {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.menu ul li {
+ }
+ 
+ .menu ul li {
   position: relative;
-}
-
-.menu ul li.active::after {
+ }
+ 
+ .menu ul li.active::after {
   content: "";
   position: absolute;
   bottom: -1em;
@@ -55,8 +55,8 @@
   width: 95%;
   height: 0.1875em;
   background-color: red;
-}
-.menu ul li:hover::after {
+ }
+ .menu ul li:hover::after {
   content: "";
   position: absolute;
   bottom: -1em;
@@ -64,12 +64,12 @@
   width: 95%;
   height: 0.1875em;
   background-color: red;
-}
-.menu ul li a.active {
+ }
+ .menu ul li a.active {
   font-weight: bold;
-}
-
-.menu ul a {
+ }
+ 
+ .menu ul a {
   margin-right: 1.25em;
   cursor: pointer;
   color: #222;
@@ -79,13 +79,13 @@
   line-height: 1.375em;
   letter-spacing: 0.05em;
   text-align: center;
-}
-
-.search-icon {
+ }
+ 
+ .search-icon {
   margin-right: 1.25em;
   cursor: pointer;
-}
-.button {
+ }
+ .button {
   background-color: #ccc;
   border: none;
   padding: 0.625em;
@@ -98,27 +98,27 @@
   background: linear-gradient(to left, #ccc 50%, red 50%) right;
   background-size: 200%;
   transition: 0.5s ease-out;
-}
-.def {
+ }
+ .def {
   color: #fff !important;
-}
-.button:hover {
+ }
+ .button:hover {
   background-position: left;
-}
-.button:hover .link-img {
+ }
+ .button:hover .link-img {
   display: inline-block;
-}
-.link-img {
+ }
+ .link-img {
   display: none;
   width: 1em;
   margin-top: 0.1875em;
   margin-left: 0.1875em;
-}
-.menulinks {
+ }
+ .menulinks {
   display: flex;
   align-items: center;
-}
-.dropdown {
+ }
+ .dropdown {
   position: fixed;
   top: 4.375em;
   background-color: #fff;
@@ -127,32 +127,33 @@
   display: flex;
   z-index: 10000;
   margin-left: -0.5em;
-}
-.dropdown-left-top {
+  display: none;
+ }
+ .dropdown-left-top {
   position: absolute;
   top: 3.125em;
-}
-.dropdown-left-top > img {
+ }
+ .dropdown-left-top > img {
   width: 12em;
-}
-.dropdown-left-img > img {
+ }
+ .dropdown-left-img > img {
   width: 90%;
-}
-.search-icon > img {
+ }
+ .search-icon > img {
   width: 0.8em;
-}
-.dropdown-left-bottom > img {
+ }
+ .dropdown-left-bottom > img {
   width: 0.12em;
-}
-.dropdown-top-text {
+ }
+ .dropdown-top-text {
   margin-top: -2.8125em;
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.75em;
   color: #fff;
   margin-left: 1.875em;
-}
-.dropdown-left-mid {
+ }
+ .dropdown-left-mid {
   position: absolute;
   top: 8.125em;
   color: #fff;
@@ -161,83 +162,83 @@
   font-weight: 400;
   line-height: 1.375em;
   text-align: left;
-}
-.dropdown-left-mid > span {
+ }
+ .dropdown-left-mid > span {
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.75em;
   text-align: left;
-}
-.dropdown-left-bottom {
+ }
+ .dropdown-left-bottom {
   display: flex;
   align-items: center;
   position: absolute;
   top: 14.375em;
   margin-left: 1.875em;
   gap: 0.625em;
-}
-.bottom-text {
+ }
+ .bottom-text {
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.375em;
   text-align: left;
   color: #fff;
-}
-.dropdown-right {
+ }
+ .dropdown-right {
   position: absolute;
   bottom: -0.375em;
   right: 0;
-}
-.dropdown-right > img {
+ }
+ .dropdown-right > img {
   width: 9em;
-}
-.dropdown-header {
+ }
+ .dropdown-header {
   display: flex;
   align-items: center;
   gap: 0.625em;
   cursor: pointer;
-}
-.dropdown-header > img {
+ }
+ .dropdown-header > img {
   width: 0.9375em;
-}
-.heder-drop {
+ }
+ .heder-drop {
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.875em;
   text-align: center;
-}
-.main-dropdown {
+ }
+ .main-dropdown {
   display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: column;
-}
-.submenu {
+ }
+ .submenu {
   margin-left: 1.6875em;
   padding-top: 0.625em;
-}
-.submenu > a {
+ }
+ .submenu > a {
   text-decoration: none;
   color: black;
   opacity: 60%;
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
-}
-.submenu > p {
+ }
+ .submenu > p {
   color: black;
   opacity: 60%;
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   padding-bottom: 0.625em;
   margin-top: -3.125em;
-}
-.press {
+ }
+ .press {
   height: auto;
   margin-top: 0.625em;
   padding: 0 6.25em;
   margin-bottom: 3.75em;
   display: block;
-}
-
-.press-title {
+ }
+ 
+ .press-title {
   color: var(--Accent-Teal, #00677f);
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
@@ -247,9 +248,9 @@
   text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 2.5em;
-}
-
-.inNews-title {
+ }
+ 
+ .inNews-title {
   color: var(--Accent-Teal, #00677f);
   font: 1.125em "Helvetica Neue LT W1G", Helvetica; /* 18px */
   font-weight: 700;
@@ -257,82 +258,88 @@
   letter-spacing: 0.1em; /* already in em units */
   text-align: left;
   margin-bottom: 2.5em; /* 40px */
-}
-
-.press-main {
+ }
+ 
+ .press-main {
   display: flex;
   align-items: center;
   gap: 1em;
-}
-
-.press-single {
+ }
+ 
+ .press-single {
   width: 33%;
   height: 23em;
-}
-
-.press-single > img {
+ }
+ 
+ .press-single > img {
   width: 100%;
-}
-
-.press-desc {
-  font: 1.25em "Helvetica Neue LT W1G", Helvetica;
-  font-weight: 500;
-  line-height: 1.75em;
-  text-align: left;
-  margin-top: 0.625em;
-}
-
-.press-date {
-  font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ }
+ 
+ .press-desc {
+   font: 1.15em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 600;
+   line-height: 1.5em;
+   text-align: left;
+   margin-top: 0.625em;
+ }
+ 
+ .press-date {
+  font: 1.15em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.875em;
   text-align: left;
   margin-top: 0.625em;
   color: gray;
-}
-
-.press-btn {
+ }
+ 
+ .press-btn {
   display: flex;
   align-items: center;
   gap: 0.5em;
   margin-top: 5.625em;
-}
-
-.press-btn > p {
+ }
+ 
+ .press-btn > p {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.04em;
   text-align: left;
-}
-
-.press-btn > img {
+ }
+ 
+ .press-btn > img {
   width: 1em;
-}
-
-.carousel1 {
+ }
+ 
+ .carousel1{
   display: none;
-}
-
-.carousel1-dots {
+ }
+ 
+ .carousel1-dots, .carousel-dots {
   display: flex;
   justify-content: end;
   margin-top: 9.875em;
   margin-right: 1.875em;
-}
-.carousel1-dot {
+ }
+ .carousel-dots {
+   display: flex;
+   justify-content: end;
+   margin-top: 0.875em;
+   margin-right: 1.875em;
+  }
+ .carousel1-dot, .carousel-dot {
   width: 0.625em;
   height: 0.625em;
   background-color: rgb(192, 192, 192);
   margin: 0 0.4375em;
   transition: all 0.3s ease;
-}
-
-.carousel1-dot.active {
+ }
+ 
+ .carousel1-dot.active, .carousel-dot.active {
   background-color: red;
   transform: scaleX(2);
-}
-.newsletter {
+ }
+ .newsletter{
   width: 100%;
   height: auto;
   padding: 1.5em 1.5em 1.5em 2em;
@@ -343,53 +350,53 @@
   background-color: rgba(245, 245, 245, 1);
   margin-bottom: 6.25em;
   margin-top: 6.25em;
-}
-.center {
+ }
+ .center{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-.newsletter-text-top {
+ }
+ .newsletter-text-top{
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.4em;
   text-align: left;
-}
-.newsletter-tect-mid {
+ }
+ .newsletter-tect-mid{
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.5em;
   text-align: left;
-}
-.email {
+ }
+ .email{
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.571em;
   text-align: left;
   font-weight: 500;
-}
-input {
+ }
+ input{
   width: 70%;
-  height: 2.188em;
+  height: 3.188em;
   border-radius: 2px 0px 0px 0px;
   background-color: rgba(255, 255, 255, 1);
   border: none;
   outline: none;
   margin-top: 0.938em;
   padding: 0.625em;
-}
-input::placeholder {
+ }
+ input::placeholder{
   font: 1.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.571em;
   text-align: left;
-}
-.dd {
+ }
+ .dd {
   position: relative;
-}
-
-.dd > p {
+ }
+ 
+ .dd > p {
   position: relative;
   top: -3.625em;
   left: 4.9375em;
@@ -401,10 +408,10 @@ input::placeholder {
   color: #ffffff;
   transition: all 0.3s ease;
   cursor: pointer;
-}
-
-.dd > p::after {
-  content: "→";
+ }
+ 
+ .dd > p::after {
+  content: '→';
   display: inline-block;
   opacity: 0;
   margin-left: -1.25em;
@@ -412,22 +419,22 @@ input::placeholder {
   transition: all 0.3s ease;
   position: relative;
   left: -0.625em;
-}
-
-.dd > p:hover::after {
+ }
+ 
+ .dd > p:hover::after {
   opacity: 1;
   margin-left: 0.625em;
   left: 0;
-}
-.dd > img {
+ }
+ .dd > img {
   width: 15em;
-}
-.podcast {
+ }
+ .podcast{
   height: auto;
   padding: 3.125em 6.25em;
   margin-top: 1.875em;
-}
-.podcast-title {
+ }
+ .podcast-title {
   color: var(--Accent-Teal, #00677f);
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
@@ -437,296 +444,296 @@ input::placeholder {
   text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 3.125em;
-}
-.main-podcast {
+ }
+ .main-podcast{
   display: flex;
   align-items: center;
   width: 100%;
   gap: 2.5em;
-}
-.podcast-left,
-.podcast-right {
+ }
+ .podcast-left, .podcast-right{
   width: 50%;
   height: auto;
   background-color: rgba(245, 245, 245, 1);
   display: flex;
   align-items: center;
   gap: 1.25em;
-}
-.podcast-play {
+ }
+ .podcast-play{
   display: flex;
   align-items: center;
   gap: 0.625em;
   margin-top: -1em;
-}
-.podcast-top {
+ }
+ .podcast-top{
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.5em;
   margin-top: 1.25em;
   text-align: left;
-}
-.play-text {
+ }
+ .play-text{
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.375em;
   text-align: left;
   color: rgba(231, 19, 22, 1);
   margin-right: 0.625em;
-}
-.podcast-text {
+ }
+ .podcast-text{
   flex: 1;
-}
-.leadershipn-top {
+ }
+ .leadershipn-top {
   height: auto;
   background-color: rgba(0, 8, 27, 1);
   padding: 3.125em 6.25em;
-}
-
-.leadershipn-title {
+ }
+ 
+ .leadershipn-title {
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 700;
   line-height: 1.375em;
   letter-spacing: 0.00625em;
   text-align: left;
   color: rgba(181, 189, 0, 1) !important;
-}
-
-.leadershipn-cover {
+  margin-bottom: 2em;
+ }
+ 
+ .leadershipn-cover {
   display: flex;
   align-items: start;
   gap: 1.875em;
   color: rgba(255, 255, 255, 1);
   margin-top: 1.25em;
   background-color: rgba(39, 46, 61, 255);
-}
-.leadershipn-cover > img {
+ }
+ .leadershipn-cover > img {
   width: 35%;
-}
-
-.leadershipn-right {
+ }
+ 
+ .leadershipn-right {
   padding: 1.875em;
   padding-bottom: 0;
   width: 65%;
-}
-
-.leadershipn-top-right {
+ }
+ 
+ .leadershipn-top-right {
   font: 1.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 2.5em;
   text-align: left;
-  margin-bottom: 1.5em;
-  margin-top: 1.25em;
-}
-
-.leadershipn-mid-right,
-.leadershipn-mid2-right {
+  margin-bottom: 0.5em;
+ }
+ 
+ .leadershipn-mid-right,
+ .leadershipn-mid2-right {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.6em;
   text-align: left;
-}
-
-.leadershipn-mid2-right {
-  margin-top: 1.25em;
-}
-
-.leadershipn-btn {
+ }
+ 
+ .leadershipn-mid2-right {
+  margin-top: 1.5em;
+ }
+ 
+ .leadershipn-btn {
   display: flex;
   align-items: center;
   gap: 0.625em;
-  margin-top: 3.125em;
+  margin-top: 4.125em;
   cursor: pointer;
-}
-
-.leadershipn-btn > img {
+ }
+ 
+ .leadershipn-btn > img {
   width: 1em;
-}
-
-.leadership-cover-bottom {
+ }
+ 
+ .leadership-cover-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 1.875em;
   background-color: rgba(166, 25, 46, 1);
-  padding: 0.9375em;
-}
-
-.leadership-cover-bottom > p {
+  padding: 1.5em;
+ }
+ 
+ .leadership-cover-bottom > p {
   font: 1.5625em "Helvetica Neue LT W1G", Helvetica;
   font-style: italic;
   font-weight: 400;
-  line-height: 2.3125em;
+  line-height: 1.3125em;
   text-align: center;
   color: #fff;
-}
-
-.author {
+ }
+ 
+ .author {
   font: 1em "Helvetica Neue LT W1G", Helvetica !important;
   font-weight: 700 !important;
   line-height: 1.5em !important;
   text-align: center !important;
   margin-top: 1.875em;
-}
-
-.leadershipn-bottom {
+ }
+ 
+ .leadershipn-bottom {
   padding: 3.125em 6.25em;
-}
-
-.leadership-bottom-top {
+ }
+ 
+ .leadership-bottom-top {
   font: 1.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 300;
   line-height: 1.5em;
   text-align: left;
   margin-top: 1.875em;
-}
-
-.leadership-bottom-top > span {
+  margin-bottom: 1em;
+ }
+ 
+ .leadership-bottom-top > span {
   font-weight: 700 !important;
-}
-
-.leadershipn-single-top,
-.leadershipn-single-bottom {
+ }
+ 
+ .leadershipn-single-top,
+ .leadershipn-single-bottom {
   height: 10.986em;
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 0.3125em;
   margin-top: 1.875em;
-}
-
-.leadershipn-bottom-single {
+ }
+ 
+ .leadershipn-bottom-single {
   width: 98vw;
   height: auto;
   background-color: rgba(245, 245, 245, 1);
   padding: 1.25em;
-}
-
-.percentage {
+ }
+ 
+ .percentage {
   font: 1.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 600;
   line-height: 2.5em;
   text-align: left;
-}
-
-.percentage-desc {
+ }
+ 
+ .percentage-desc {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.5em;
   text-align: left;
-  margin-top: 0.625em;
-}
-
-.leadership-bottom-single {
+  margin-top: -1em;
+ }
+ 
+ .leadership-bottom-single {
   width: auto;
   height: 11em;
   border-radius: 0.25em 0em 0em 0em;
   background-color: #e8f5f7;
   padding: 1.25em;
   height: auto;
-}
-
-.leadership-btn {
+ }
+ 
+ .leadership-btn {
   margin-left: 6.25em;
   margin-top: 0.625em;
   display: flex;
   align-items: center;
   gap: 0.5em;
-}
-
-.leadership-btn > img {
+ }
+ 
+ .leadership-btn > img {
   width: 1em;
-}
-
-.leadership-bottom {
+ }
+ 
+ .leadership-bottom {
   position: relative;
   display: inline-block;
-}
-
-.leadership-bottom::after {
-  content: "\2192";
+ }
+ 
+ .leadership-bottom::after {
+  content: '\2192';
   position: absolute;
   top: 0.3125em;
   right: -2.1875em;
   transform: translateY(-50%);
   opacity: 0;
   font-size: 1.875em;
-  transition: opacity 0.3s ease;
-}
-
-.carousel2 {
+  transition: opacity 0.3s ease,
+ }
+ 
+ .carousel2 {
   position: relative;
   overflow: hidden;
   width: 100%;
-}
-
-.carousel2-inner {
+ }
+ 
+ .carousel2-inner {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 10px;
-}
-
-.carousel3 {
+  gap: 2px;
+ }
+ 
+ .carousel3 {
   position: relative;
   overflow: hidden;
   width: 100%;
-}
-
-.carousel3-inner {
+ }
+ 
+ .carousel3-inner {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 10px;
-}
-.animation-btn {
-  cursor: pointer;
-  font-size: 1em; /* 16px */
-  font-weight: 500;
-  line-height: 1.2em; /* 19.2px */
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: #4a4a4a;
-}
-.c-para {
+  gap: 2px;
+ }
+ .animation-btn {
+   cursor: pointer;
+   font-size: 1em; /* 16px */
+   font-weight: 500;
+   line-height: 1.2em; /* 19.2px */
+   letter-spacing: 0.04em;
+   text-align: left;
+   color: #4A4A4A;
+  }
+ .c-para{
   display: none;
-}
-.round:hover {
+ }
+ .round:hover {
   background-color: red;
-}
-.podcast-btn {
+ }
+ .podcast-btn{
   display: flex;
   align-items: center;
   gap: 0.5em;
   margin-top: 2.5em;
   margin-left: 0.9375em;
-}
-.podcast-btn > p {
+ }
+ .podcast-btn > p {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.04em;
   text-align: left;
-  color: #4a4a4a;
-}
-.podcast-btn > img {
+  color: #4A4A4A;
+ }
+ .podcast-btn > img {
   width: 1em;
-}
-.def1 {
+ }
+ .def1{
   width: 30%;
-}
-.def1 > img {
+ }
+ .def1 > img {
   width: 100%;
-}
-.animation-btn {
+ }
+ .animation-btn {
   cursor: pointer;
   font-size: 1em;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.04em;
   text-align: left;
-  color: #4a4a4a;
-}
-.round {
+  color: #4A4A4A;
+ }
+ .round {
   width: 1.875em;
   height: 1.875em;
   border-radius: 50%;
@@ -735,18 +742,18 @@ input::placeholder {
   justify-content: center;
   background-color: #222222;
   cursor: pointer;
-}
-.round > img {
+ }
+ .round > img {
   width: 0.5em;
-}
-.inNews {
+ }
+ .inNews {
   height: auto;
   padding: 3.125em 6.25em;
   margin-bottom: 6.25em;
   margin-top: -2.1875em;
-}
-
-.inNews-title {
+ }
+ 
+ .inNews-title {
   color: var(--Accent-Teal, #00677f);
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 700;
@@ -754,15 +761,16 @@ input::placeholder {
   letter-spacing: 0.1em;
   text-align: left;
   margin-bottom: 2.5em;
-}
-
-.inNews-main {
+  padding-left: 0.6em;
+ }
+ 
+ .inNews-main {
   display: flex;
   gap: 0.625em;
   margin-top: 1.875em;
-}
-
-.inNews-badge {
+ }
+ 
+ .inNews-badge {
   background-color: rgba(234, 118, 0, 1);
   width: 100%;
   display: inline;
@@ -773,57 +781,57 @@ input::placeholder {
   line-height: 1.5em;
   text-align: left;
   color: #fff;
-}
-
-.inNews-single {
+ }
+ 
+ .inNews-single {
   width: 33%;
-}
-
-.inNews-single > img {
+ }
+ 
+ .inNews-single > img {
   margin-top: 0.625em;
   width: 100%;
-}
-
-.inNews-date {
-  font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ }
+ 
+ .inNews-date {
+  font: 1.15em "Helvetica Neue LT W1G", Helvetica;
   color: gray;
   font-weight: 400;
   line-height: 1.875em;
   text-align: left;
-}
-
-.inNews-desc {
-  font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ }
+ 
+ .inNews-desc {
+  font: 1.15em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 600;
-  line-height: 1.75em;
+  line-height: 1.5em;
   text-align: left;
-}
-
-.btn-single {
+ }
+ 
+ .btn-single {
   display: flex;
   align-items: center;
   gap: 0.5em;
-  margin-top: 0.625em;
-}
-.btn-single > img {
+  margin-top: 1em;
+ }
+ .btn-single > img {
   width: 1em;
-}
-.carousel {
-  display: none;
-}
-.c-btn {
-  text-transform: uppercase;
+ }
+ .carousel {
+   display: none;
+ }
+ .c-btn{
+   text-transform: uppercase;
   color: red;
   font: 20px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 600;
   margin-top: 1em;
-}
-.main-media {
+ }
+ .main-media{
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
   margin-top: 0.625em;
-}
-.main-media-title {
+ }
+ .main-media-title{
   color: var(--Accent-Teal, #00677f);
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
@@ -834,25 +842,26 @@ input::placeholder {
   white-space: nowrap;
   margin-bottom: 3.125em;
   margin-top: 3.125em;
-}
-.container {
+ }
+ .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 1.875em;
-}
-.leftdiv {
+ }
+ .leftdiv {
   flex-grow: 1;
   border-radius: 0.125em;
   background: #efeff0;
   padding: 1.25em 2.5em;
-}
-.Auhtor-and-Date {
+ }
+ .Auhtor-and-Date{
   margin-top: 1.25em;
   font: 1em "Helvetica Neue LT W1G", Helvetica;
-}
-.leftdiv .p {
+  color: #54585A;
+ }
+ .leftdiv .p {
   position: relative;
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
@@ -860,30 +869,33 @@ input::placeholder {
   color: #222222;
   letter-spacing: 0;
   line-height: 1.5em;
-}
-.logo {
+  margin-top: 1em;
+  margin-bottom: 3em;
+ }
+ .logo {
   width: 2.5em;
   height: 2.5em;
-}
-.with-background {
+ }
+ .with-background {
   background-color: #f5f5f5;
   padding: 5em 0;
-}
-.p > div {
+ }
+ .p > div {
   font-size: 0.875em;
   font-family: "Helvetica Neue LT W1G-55Roman", Helvetica;
   font-weight: 400;
   color: rgba(84, 88, 90, 1);
   padding-top: 1.875em !important;
-}
-.with-background {
+ }
+ .with-background {
   background-color: #f5f5f5;
-  padding: 5em 6.25em;
+  padding: 2em 6.25em;
   margin: 0;
   margin-top: 5em;
-}
-
-.socials {
+  padding-bottom: 9em !important;
+ }
+ 
+ .socials{
   display: flex;
   align-items: center;
   justify-content: end;
@@ -891,74 +903,74 @@ input::placeholder {
   gap: 0.625em;
   margin-top: -3.75em;
   margin-left: -5em;
-}
-.socials > img {
+ }
+ .socials > img {
   width: 12.5em;
   margin-right: 6.25em;
-}
-.socials > p {
+ }
+ .socials > p {
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   color: gray;
-}
-.iconss {
+ }
+ .iconss {
   height: 1.1em;
-}
-.iconss > a {
+ }
+ .iconss > a {
   text-decoration: none;
   margin-right: 0.5em;
-}
-.iconss > a > img {
+ }
+ .iconss > a > img {
   height: 100%;
-}
-body {
+ }
+ body {
   overflow-x: hidden;
-}
-.main-news {
+ }
+ .main-news {
   width: 100%;
   margin-top: 7.375em;
   position: relative;
-}
-
-.main-news > img {
+ }
+ 
+ .main-news > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.main-poistion {
+ }
+ 
+ .main-poistion {
   position: absolute;
   top: 0;
   height: 99%;
   width: 50%;
-}
-.main-cover {
+ }
+ .main-cover{
   height: 100%;
   width: 100%;
   object-fit: cover;
   opacity: 0.8;
-}
-
-.image-txt {
+ }
+ 
+ .image-txt {
   position: absolute;
   top: 2.5em;
   left: 6.25em;
   color: #fff;
-}
-
-.txt-top {
+ }
+ 
+ .txt-top {
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 700;
   line-height: 1.75em;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
-}
-
-.txt-mid1 {
+ }
+ 
+ .txt-mid1 {
   margin-left: 0.625em;
-}
-
-.main-header-title {
+ }
+ 
+ .main-header-title {
   display: none;
   text-transform: uppercase;
   margin-left: 1.3em;
@@ -966,187 +978,191 @@ body {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 600;
   letter-spacing: 0.1em;
-}
-
-.txt-mid,
-.txt-mid1 {
+ }
+ 
+ .txt-mid, .txt-mid1 {
   font: 2em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.5em;
   text-align: left;
   margin-top: 0.5em;
-}
-.txt-mid1 > span {
+ }
+ .txt-mid1 > span {
   font-weight: 700;
-}
-.footer {
+ }
+ .footer {
   display: flex;
   justify-content: space-between;
   background-color: #4a4a4a;
   padding: 2.5em 2.5em;
-}
-
-.footer-column {
+ }
+ 
+ .footer-column {
   flex: 1;
-}
-
-.footer-first-top {
+ }
+ 
+ .footer-first-top {
   font: 700 1.125em/1.5em "Helvetica Neue LT W1G", Helvetica, sans-serif; /* 18px/24px */
   margin-bottom: 0.625em;
   color: #ebebec;
-}
-
-.footer-first-mid {
+ }
+ 
+ .footer-first-mid {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.75em;
   text-align: left;
   color: #c9cacc;
-}
-
-.footer-first-bootom {
+ }
+ 
+ .footer-first-bootom {
   margin-top: 0.625em;
   color: #c9cacc;
-  font: 0.9em "Helvetica Neue LT W1G", Helvetica;
-}
-
-.footer-second {
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
+ }
+ .footer-first-bootom >  a {
+   text-decoration: underline;
+   color: #C9CACC;
+   padding-top: 1em;
+ }
+ .footer-second {
   font-family: "Helvetica Neue LT W1G", Helvetica;
-  font-size: 1em;
+  font-size: 1em; 
   font-weight: 700;
   line-height: 1.5em;
   text-align: left;
   color: #ffffff;
-}
-
-.footer-second-top {
+ }
+ 
+ .footer-second-top {
   color: #ebebec;
   font-family: "Helvetica Neue LT W1G", Helvetica;
-}
-
-.footer-second-p {
+ }
+ 
+ .footer-second-p {
   color: white;
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   cursor: pointer;
   margin-top: 1em;
-}
-
-.footer-third {
+  white-space: nowrap;
+ }
+ 
+ .footer-third {
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   font-weight: 700;
   line-height: 1.5em;
   text-align: left;
   color: #ffffff;
-}
-
-.footer-third-top {
+ }
+ 
+ .footer-third-top {
   color: #ebebec;
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
-}
-
-.footer-third-p {
+ }
+ 
+ .footer-third-p {
   color: white;
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   cursor: pointer;
-}
-
-.footer-fourth {
+ }
+ 
+ .footer-fourth {
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   font-weight: 700;
   line-height: 2em;
   text-align: left;
   color: #ffffff;
-}
-
-.footer-fourth-top {
+ }
+ 
+ .footer-fourth-top {
   color: #ebebec;
-}
-
-.pre-footer {
+ }
+ 
+ .pre-footer {
   display: flex;
   justify-content: space-between;
   background-color: #4a4a4a;
-  padding: 2.5em 2.5em;
-  margin-top: 0.0625em;
-}
-
-.pre-footer-logo {
+  padding: 2.5em 2.5em; 
+  margin-top: 0.0625em; 
+ }
+ 
+ .pre-footer-logo {
   height: 2em !important;
   margin-top: 0.625em;
   cursor: pointer;
-}
-
-.button > a {
+ }
+ 
+ .button > a {
   text-decoration: none;
   color: #fff;
-}
-
-.pre-footer-first {
+ }
+ 
+ .pre-footer-first {
   color: #ebebec;
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 1.375em;
+  line-height: 1.375em; 
   text-align: left;
-}
-
-.pre-footer-second {
-  color: #ebebec;
-  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-  font-weight: 400;
-  line-height: 1.375em;
-  text-align: left;
-  cursor: pointer;
-}
-
-.pre-footer-third {
+ }
+ 
+ .pre-footer-second {
   color: #ebebec;
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.375em;
   text-align: left;
   cursor: pointer;
-}
-
-.footer-icons {
+ }
+ 
+ .pre-footer-third {
+  color: #ebebec;
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  line-height: 1.375em;
+  text-align: left;
+  cursor: pointer;
+ }
+ 
+ .footer-icons {
   display: flex;
   flex-direction: row;
   gap: 1.25em;
   margin-top: 0.625em;
-}
-
-.connect-top,
-.connect-bottom {
+ }
+ 
+ .connect-top,
+ .connect-bottom {
   display: flex;
   flex-direction: column;
-}
-
-.connect-top > img,
-.connect-bottom > img {
+ }
+ 
+ .connect-top > img,
+ .connect-bottom > img {
   margin-bottom: 0.625em;
-}
-
-.footer-first {
+ }
+ 
+ .footer-first {
   width: 50%;
-}
-
-.main-btn-newsroom2 {
+ }
+ 
+ .main-btn-newsroom2 {
   display: none;
-}
-
-.hide {
+ }
+ 
+ .hide {
+   display: none;
+ }
+ 
+ .our-story-mob {
   display: none;
-}
-
-.our-story-mob {
-  display: none;
-}
-
-.socials {
+ }
+ 
+ .socials {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1154,25 +1170,24 @@ body {
   gap: 0.625em;
   margin-top: -3.75em;
   padding-right: 1.875em;
-}
-
-.connect-top > a > img,
-.connect-bottom > a > img {
+ }
+ 
+ .connect-top > a > img, .connect-bottom > a > img {
   width: 1.5em;
-}
-
-.socials > p {
+ }
+ 
+ .socials > p {
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   color: gray;
-}
-
-.newsroom-about {
+ }
+ 
+ .newsroom-about {
   margin-top: 6.5em;
   padding: 0 6.25em;
-}
-
-.newsroom-about-title {
-  color: #00677f;
+ }
+ 
+ .newsroom-about-title {
+  color:  #00677f;
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
   font-weight: 700;
@@ -1180,138 +1195,138 @@ body {
   letter-spacing: 0.1125em;
   text-transform: uppercase;
   white-space: nowrap;
-}
-
-.newsroom-about-main {
+ }
+ 
+ .newsroom-about-main {
   display: flex;
   align-items: center;
   gap: 4.25em;
   margin-top: -2.25em;
-}
-
-.newsroom-about-left-heading {
-  font: 3.125em "Helvetica Neue LT W1G", Helvetica;
+ }
+ 
+ .newsroom-about-left-heading {
+  font: 3.125em "Helvetica Neue LT W1G", Helvetica; 
   font-weight: 400;
   line-height: 1.15em;
   text-align: left;
   margin-top: 1.2em;
-}
-
-.newsroom-about-left-heading > span {
+ }
+ 
+ .newsroom-about-left-heading > span {
   font-weight: 700;
-}
-
-.newsroom-top {
+ }
+ 
+ .newsroom-top {
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.4em;
   text-align: left;
-}
-
-.newsroom-right {
+ }
+ 
+ .newsroom-right {
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 700;
   line-height: 1.4em;
   text-align: left;
   margin-top: 1em;
-}
-
-.newsroom-right-investor {
+ }
+ 
+ .newsroom-right-investor {
   font: 0.75em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   font-style: normal;
   line-height: 1.25em;
   text-align: left;
   margin-top: 0.125em;
-  color: #54585a;
+  color: #54585A;
   opacity: 0.8;
-}
-
-.main-btn-newsroom {
+ }
+ 
+ .main-btn-newsroom {
   display: flex;
   align-items: center;
   gap: 0.625em;
   margin-top: 2em;
   cursor: pointer;
-}
-
-.main-btn-newsroom > p {
+ }
+ 
+ .main-btn-newsroom > p {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
-}
-
-.animation-btn:hover {
+ }
+ 
+ .animation-btn:hover {
   color: red !important;
-}
-.carousel4 {
+ }
+ .carousel4 {
   position: relative;
   overflow: hidden;
   width: 100%;
   margin-top: -3em;
-}
-.carousel4-inner {
+ }
+ .carousel4-inner {
   display: flex;
   transition: transform 0.5s ease;
-}
-
-.carousel4-item {
+ }
+ 
+ .carousel4-item {
   min-width: 100%;
   box-sizing: border-box;
-}
-
-.carousel4-dots {
+ }
+ 
+ .carousel4-dots {
   display: flex;
   justify-content: center;
   margin-top: 0.625em;
   position: absolute;
-  bottom: -8.4375em;
-}
-
-.carousel4-dot {
+  bottom: -8.4375em;;
+ }
+ 
+ .carousel4-dot {
   width: 0.5375em;
   height: 0.425em;
   background-color: #fff;
   margin: 0 0.3125em;
   transition: all 0.3s ease;
   cursor: pointer;
-}
-
-.carousel4-dot.active {
+ }
+ 
+ .carousel4-dot.active {
   background-color: #fff;
   transform: scaleX(2);
-}
-
-.carousel5 {
+ }
+ 
+ .carousel5 {
   position: relative;
   width: 100%;
   overflow: hidden;
   display: none;
-}
-
-.carousel5-inner {
+ }
+ 
+ .carousel5-inner {
   display: flex;
   transition: transform 0.5s ease;
   width: 300%;
-}
-
-.main-header {
+ }
+ 
+ .main-header {
   min-width: 100%;
   box-sizing: border-box;
-}
-
-.main-btn-newsroom > img {
+ }
+ 
+ .main-btn-newsroom > img {
   width: 1em;
-}
-
-.animation-btn:hover {
+ }
+ 
+ .animation-btn:hover{
   color: red !important;
-}
-
-.podcast {
+ }
+ 
+ .podcast{
   height: auto;
   padding: 3.125em 6.25em;
   margin-top: 1.875em;
-}
-.podcast-title {
+ }
+ .podcast-title {
   color: var(--Accent-Teal, #00677f);
   font: 1.125em "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
@@ -1321,89 +1336,88 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 3.125em;
-}
-.main-podcast {
+ }
+ .main-podcast{
   display: flex;
   align-items: center;
   width: 100%;
   gap: 2.5em;
-}
-.podcast-left,
-.podcast-right {
+ }
+ .podcast-left, .podcast-right{
   width: 50%;
   height: auto;
   background-color: rgba(245, 245, 245, 1);
   display: flex;
   align-items: center;
   gap: 1.25em;
-}
-.podcast-play {
+ }
+ .podcast-play{
   display: flex;
   align-items: center;
   gap: 0.625em;
   margin-top: -1em;
-}
-.podcast-top {
+ }
+ .podcast-top{
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.5em;
   margin: 1.25em 0;
   text-align: left;
-}
-.play-text {
+ }
+ .play-text{
   font: 0.775em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 600;
   line-height: 1.375em;
   text-align: left;
   color: rgba(231, 19, 22, 1);
   margin-right: 0.625em;
-}
-.podcast-text {
+ }
+ .podcast-text{
   flex: 1;
-}
-.c-para {
+ }
+ .c-para{
   display: none;
-}
-.round:hover {
+ }
+ .round:hover {
   background-color: red;
-}
-.podcast-btn {
+ }
+ .podcast-btn{
   display: flex;
   align-items: center;
   gap: 0.5em;
   margin-top: 2.5em;
   margin-left: 0.9375em;
-}
-.podcast-btn > p {
+ }
+ .podcast-btn > p {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.04em;
   text-align: left;
-  color: #4a4a4a;
-}
-.podcast-btn > img {
+  color: #4A4A4A;
+ }
+ .podcast-btn > img {
   width: 1em;
-}
-.hide {
-  display: none;
-}
-.def1 {
+ }
+ .hide {
+   display: none;
+ }
+ .def1{
   width: 30%;
-}
-.def1 > img {
+ }
+ .def1 > img {
   width: 100%;
-}
-.animation-btn {
+ }
+ .animation-btn {
   cursor: pointer;
-  font: 0.7em "Helvetica Neue LT W1G", Helvetica;
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.04em;
   text-align: left;
-  color: #4a4a4a;
-}
-.round {
+  color: #4A4A4A;
+ }
+ .round {
   width: 1.875em;
   height: 1.875em;
   border-radius: 50%;
@@ -1412,36 +1426,31 @@ body {
   justify-content: center;
   background-color: #222222;
   cursor: pointer;
-}
-.round > img {
+ }
+ .round > img {
   width: 0.5em;
-}
-
-#blur-overlay {
+ }
+ 
+ #blur-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(10px); /* Apply the blur effect */
-  background: rgba(
-    255,
-    255,
-    255,
-    0.3
-  ); /* Optional: to darken the background slightly */
+  background: rgba(255, 255, 255, 0.3); /* Optional: to darken the background slightly */
   z-index: 1; /* Ensure the blur is below the navbar and dropdown */
-  display: block;
-}
-@media only screen and (max-width: 991px) {
-  .mobile-container {
+  display: none;
+ }
+ @media only screen and (max-width: 991px){
+  .mobile-container{
     display: block;
   }
-  .desk-nav {
+  .desk-nav{
     display: none;
   }
-}
-@keyframes slideInDown {
+ }
+ @keyframes slideInDown {
   from {
     transform: translateY(-40%);
     opacity: 0;
@@ -1450,19 +1459,19 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.animated {
+ }
+ 
+ .animated {
   animation-name: slideInDown;
   animation-duration: 0.8s;
-}
-
-.dropdown-header.active {
+ }
+ 
+ .dropdown-header.active {
   color: #f03817;
   display: flex;
   align-items: center;
-}
-.dropdown-mid {
+ }
+ .dropdown-mid {
   position: absolute;
   top: 3.75em;
   left: 31.25em;
@@ -1471,651 +1480,674 @@ body {
   flex-wrap: wrap;
   width: 50em;
   white-space: pre;
-}
-.on {
+ }
+ .on {
   font-weight: bold !important;
-}
-.dropdown-mid > p {
+ }
+ .dropdown-mid > p {
   font: 1.25em Helvetica Neue LT W1G, Helvetica;
   font-weight: 400;
   line-height: 1.875em;
   text-align: center;
-}
-
-.submenu {
+ }
+ 
+ .submenu {
   display: none;
   opacity: 0;
   transition: opacity 0.3s;
-}
-
-.submenu.visible {
+ }
+ 
+ .submenu.visible {
   display: block;
   opacity: 1;
   animation-name: slideInDown;
   animation-duration: 0.8s;
-}
-
-.button > a {
+ }
+ 
+ .button > a {
   font: 1.1em "Helvetica Neue LT W1G", Helvetica;
   text-decoration: none;
   color: #fff;
-}
-
-@media (max-width: 899px) {
-  .main-btn-newsroom {
-    display: none;
-  }
+ }
+ 
+ @media (max-width: 899px) {
+   .footer-third-top {
+     padding-top: 1em;
+   }
+   .carousel3-inner, .carousel2-inner {
+     gap: 15px;
+   }
+   
+   .main-btn-newsroom{
+     display: none;
+   }
   .footer-first {
-    width: 100%;
-    order: 2;
-  }
-  .pre-footer-logo {
-    display: none;
-  }
-  .footer-second {
-    width: 50%;
-    order: 1;
-  }
-  .pre-footer-first,
-  .pre-footer-second,
-  .pre-footer-third {
-    width: 100%;
-  }
-  .pre-footer-second {
-    order: 1;
-  }
-  .pre-footer-third {
-    order: 2;
-  }
-  .pre-footer-first {
-    order: 3;
-  }
-  .footer-third {
-    width: 50%;
-    order: 1;
-  }
-  .footer-fourth {
-    width: 100%;
-    order: 4;
-  }
-  .footer-icons {
-    gap: 0;
-  }
-  .connect-top,
-  .connect-bottom {
-    flex-direction: row;
-  }
-  .footer-icons a {
-    margin-left: 0.9375em;
-  }
-  .footer,
-  .pre-footer,
-  .csr-report-four {
-    flex-wrap: wrap;
-  }
-  .footer {
-    margin-top: 0;
-  }
-  .newsroom-about {
-    margin-top: 0;
-    padding: 0 0;
-  }
-  .newsroom-about-title {
-    display: none;
-  }
-  .newsroom-about-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    margin: 3.125em 0.4375em;
-  }
-  .newsroom-about-left-heading {
-    font: 1.75em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 400;
-    line-height: 1.625em;
-    text-align: left;
-    padding: 0 0.625em;
-    text-shadow: 0 0.25em 0.25em #00000040;
-  }
-  .newsroom-about-left-heading > span {
-    font-weight: 700;
-  }
-  .newsroom-top {
-    font: 1.2em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 400;
-    line-height: 1.65em;
-    text-align: left;
-    margin-top: 2em;
-  }
-  .newsroom-right {
-    font: 1.2em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 700;
-    line-height: 1.65em;
-    text-align: left;
-    margin-top: 1.875em;
-  }
-  .animation-btn {
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color: #e71316 !important;
-  }
-  .newsroom-about-about {
-    margin-top: -5em;
-    padding: 0 0.75em;
-  }
-  .main-news {
-    width: 100%;
-    height: 26.0625em;
-    margin-top: 4.375em;
-    position: relative;
-  }
-  .main-news > img {
-    width: 100%;
-    height: 100%;
-  }
-  .main-poistion {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .image-txt {
-    position: absolute;
-    top: 2.5em;
-    left: 2.5em;
-    color: #fff;
-  }
-  .main-cover {
-    width: 62%;
-    height: 100%;
-    object-fit: fill;
-  }
-  .txt-mid {
-    display: none;
-  }
-  .txt-top {
-    display: none;
-  }
-  .txt-slider {
-    top: 0.0625em;
-  }
-  .main-header-title {
-    display: block;
-  }
-  .carousel5 {
-    display: block;
-    margin-top: 6em;
-  }
-  .podcast {
-    height: auto;
-    padding: 0;
-    margin-top: 3.125em;
-  }
-  .podcast-title {
-    color: var(--Accent-Teal, #00677f);
-    font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.375em;
-    letter-spacing: 0.1125em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-bottom: 1.5625em;
-    margin-left: 0.625em;
-  }
-  .main-podcast {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: 2.5em;
-  }
-  .podcast-left,
-  .podcast-right {
-    width: 100vw;
-    height: auto;
-    background-color: rgba(245, 245, 245, 1);
-    display: flex;
-    align-items: start;
-    gap: 1.25em;
-  }
-  .podcast-play {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    gap: 0.625em;
-    margin-top: 1.25em;
-    flex-direction: column;
-  }
-  .podcast-top {
-    font: 1em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 500;
-    line-height: 1.5em;
-    margin-top: 1.25em;
-    text-align: left;
-    display: none;
-  }
-  .podcast-top2 {
-    font: 1em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 500;
-    line-height: 1.5em;
-    margin-top: 1.25em;
-    text-align: left;
-  }
-  .play-text {
-    font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 600;
-    line-height: 1.375em;
-    text-align: left;
-    color: rgba(231, 19, 22, 1);
-    margin-top: -0.0625em;
-    margin-right: 0.625em;
-  }
-  .c-para {
-    font: 1.3125em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 400;
-    padding-left: 0.3125em;
-    margin-top: 0.1875em;
-    line-height: 1.875em;
-    display: block !important;
-    width: 331% !important;
-  }
-  .podcast-btn > img,
-  .leadershipn-btn > img,
-  .leadership-btn > img {
-    display: none;
-  }
-  .podcast-btn > p,
-  .leadershipn-btn > p,
-  .leadership-btn > p {
-    font: 1.1125em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-left: 0.5em;
-  }
-  .leadershipn-main {
-    margin-top: 0px;
-    width: 100%;
-  }
-  .leadershipn-top {
-    height: auto;
-    background-color: rgba(0, 8, 27, 1);
-    padding: 0px;
-  }
-  .leadershipn-cover {
-    flex-direction: column;
-    align-items: normal;
-    padding: 15px 15px;
-  }
-  .leadership-cover-bottom {
-    padding: 0px;
-    width: 100%;
-    margin-top: 0px;
-    padding: 1em;
-  }
-  .leadershipn-title {
-    padding: 15px;
-    padding-top: 40px;
-    font: 18px "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 700;
-    margin-top: 50px;
-  }
-  .leadershipn-top-right {
-    font: 24px "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 500;
-    line-height: 40px;
-    text-align: left;
-    margin-bottom: 40px;
-    margin-top: 20px;
-  }
-  .leadershipn-cover > img {
-    width: 100%;
-  }
-  .leadershipn-right {
-    width: 100%;
-    padding: 0.875em;
-  }
-  .leadership-cover-bottom > p {
-    line-height: 1.3125em;
-  }
-  .leadershipn-bottom-single {
-    width: 96vw;
-    height: auto;
-    box-sizing: border-box;
-  }
-  .leadershipn-bottom {
-    padding: 0.5em;
-  }
-  .leadership-btn {
-    margin-left: 0.5em;
-    margin-top: 2em;
-  }
-  .percentage-desc {
-    width: 70vw;
-  }
-  .container {
-    flex-wrap: wrap;
-  }
-  .hide {
-    display: block;
-  }
-  .hide > img {
-    display: none;
-  }
-  .with-background {
-    padding: 10px;
-  }
-  .socials {
-    margin-top: 1em;
-    margin-left: 0em;
-  }
+   width: 100%;
+   order: 2;
+   padding-top: 3em;
+ }
+ .pre-footer-logo {
+   display: none;
+ }
+ .footer-second {
+   width: 50%;
+   order: 1;
+ }
+ .pre-footer-first,
+ .pre-footer-second,
+ .pre-footer-third {
+   width: 100%;
+ }
+ .pre-footer-second {
+   order: 1;
+   padding: 1em 0;
+ }
+ .pre-footer-third {
+   order: 2;
+   padding: 2em 0;
+ }
+ .pre-footer-first {
+   order: 3;
+ }
+ .footer-third {
+   width: 50%;
+   order: 1;
+ }
+ .footer-fourth {
+   width: 100%;
+   order: 4;
+ }
+ .footer-icons {
+   gap: 0;
+   margin-left: -1em;
+ }
+ .connect-top,
+ .connect-bottom {
+   flex-direction: row;
+ }
+ .footer-icons a {
+   margin-left: 0.9375em;
+ }
+ .footer,
+ .pre-footer,
+ .csr-report-four {
+   flex-wrap: wrap;
+ }
+ .footer {
+   margin-top: 0;
+   padding: 2.5em 1em;
+ }
+ .pre-footer{
+   padding: 2.5em 1em;
+ }
+ .newsroom-about {
+   margin-top: 0;
+   padding: 0 0;
+ }
+ .newsroom-about-title {
+   display: none;
+ }
+ .newsroom-about-main {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   justify-content: center;
+   margin: 3.125em 0.4375em;
+ }
+ .newsroom-about-left-heading {
+   font: 1.75em "Helvetica Neue LT W1G", Helvetica; 
+   font-weight: 400;
+   line-height: 1.625em;
+   text-align: left;
+   padding: 0 0.625em;
+   text-shadow: 0 0.25em 0.25em #00000040;
+ }
+ .newsroom-about-left-heading > span {
+   font-weight: 700;
+ }
+ .newsroom-top {
+   font: 1.2em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 400;
+   line-height: 1.65em;
+   text-align: left;
+   margin-top: 2em;
+ }
+ .newsroom-right {
+   font: 1.2em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 700;
+   line-height: 1.65em;
+   text-align: left;
+   margin-top: 1.875em;
+ }
+ .animation-btn {
+   cursor: pointer;
+   font-size: 1em;
+   font-weight: 500;
+   line-height: 1.2em;
+   letter-spacing: 0.04em;
+   text-align: left;
+   color: #E71316 !important;
+ }
+ .newsroom-about-about {
+   margin-top: -5em;
+   padding: 0 0.75em;
+ }
+ .main-news {
+   width: 100%;
+   height: 26.0625em;
+   margin-top: 4.375em;
+   position: relative;
+ }
+ .main-news > img {
+   width: 100%;
+   height: 100%;
+ }
+ .main-poistion {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+ }
+ .image-txt {
+   position: absolute;
+   top: 2.5em;
+   left: 2.5em;
+   color: #fff;
+ }
+ .main-cover {
+   width: 62%;
+   height: 100%;
+   object-fit: fill;
+ }
+ .txt-mid {
+   display: none;
+ }
+ .txt-top {
+   display: none;
+ }
+ .txt-slider {
+   top: 0.0625em;
+ }
+ .main-header-title{
+   display: block;
+ }
+ .carousel5 {
+   display: block;
+   margin-top: 6em;
+ }
+ .podcast{
+   height: auto;
+   padding: 0;
+   margin-top: 3.125em;
+ }
+ .podcast-title {
+   color: var(--Accent-Teal, #00677f);
+   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.375em;
+   letter-spacing: 0.1125em;
+   text-transform: uppercase;
+   white-space: nowrap;
+   margin-bottom: 1.5625em;
+   margin-left: 0.625em;
+ }
+ .main-podcast{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   gap: 2.5em;
+ }
+ .podcast-left, .podcast-right{
+   width: 100vw;
+   height: auto;
+   background-color: rgba(245, 245, 245, 1);
+   display: flex;
+   align-items: start;
+   gap: 1.25em;
+ }
+ .podcast-play{
+   display: flex;
+   align-items: start;
+   justify-content: start;
+   gap: 0.625em;
+   margin-top: 1.25em;
+   flex-direction: column;
+ }
+ .podcast-top{
+   font: 1em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 500;
+   line-height: 1.5em;
+   margin-top: 1.25em;
+   text-align: left;
+   display: none;
+ }
+ .podcast-top2{
+   font: 1em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 500;
+   line-height: 1.5em;
+   margin-top: 1.25em;
+   text-align: left;
+ }
+ .play-text{
+   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 600;
+   line-height: 1.375em;
+   text-align: left;
+   color: rgba(231, 19, 22, 1);
+   margin-top: -0.0625em;
+   margin-right: 0.625em;
+ }
+ .c-para {
+  font: 1.3125em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  padding-left: 0.3125em;
+  margin-top: 0.1875em;
+  line-height: 1.875em; 
+  display: block !important;
+  width: 331% !important;
+ }
+ .podcast-btn > img, .leadershipn-btn > img, .leadership-btn > img {
+   display: none;
+ }
+ .podcast-btn > p, .leadershipn-btn > p, .leadership-btn > p {
+   font: 1.1125em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding-left: 0.4em;
+ }
+ .leadershipn-main {
+  margin-top: 0px;
+ width: 100%;
+ }
+ .leadershipn-top {
+ height: auto;
+ background-color: rgba(0, 8, 27, 1);
+ padding: 0px;
+ padding-bottom: 0.5em;
+ }
+ .leadershipn-cover{
+ flex-direction: column;
+ align-items: normal;
+ margin: 0 1em;
+ }
+ .leadershipn-btn {
+   margin-top: 3.125em;
+   padding-bottom: 2em;
+ }
+ .leadership-cover-bottom {
+   width: 92%;
+   margin: 1em;
+ }
+ .leadershipn-title {
+ padding: 15px;
+ padding-top: 40px;
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 700;
+ margin-top: 50px;
+ }
+ .leadershipn-top-right{
+ font: 24px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 40px;
+ text-align: left;
+ margin-bottom: 40px;
+ margin-top: 20px;
+ }
+ .leadershipn-cover > img{
+ width: 100%;
+ }
+ .leadershipn-right{
+ width: 100%;
+ padding: 0.875em;
+ }
+ .leadership-cover-bottom > p{
+ line-height: 1.3125em;
+ }
+ .leadershipn-bottom-single {
+ width: 96vw;
+ height: auto;
+ box-sizing: border-box;
+ }
+ .leadershipn-bottom {
+ padding: 1em;
+ }
+ .leadership-btn{
+  margin-left: 0.5em;
+  margin-top: 2em;
+ }
+ .percentage-desc {
+  width: 70vw;
+ }
+  .container{
+   flex-wrap: wrap;
+ }
+ .hide {
+   display: block;
+ }
+ .hide > img {
+   display: none;
+ }
+ .with-background{
+  padding: 1em;
+ }
+ .socials{
+  margin-top: 1em;
+  margin-left: 0em;
+ }
   .carousel {
-    display: block;
-    position: relative;
-    width: 100%;
-    margin: 1.6875em 0.625em;
-    overflow: hidden;
-  }
-  .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  .carousel-item {
-    width: 95%;
-    box-sizing: border-box;
-    flex-shrink: 0;
-  }
-  .inNews {
-    display: none;
-  }
-  .inNews-single {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 95vw;
-  }
-  .inNews-badge {
-    width: auto;
-    font: 1em "Helvetica Neue LT W1G", Helvetica; /* 16px = 1em */
-  }
-  .inNews-single > img {
-    margin-top: 0.625em;
-    width: 93%;
-  }
-  .inNews-desc {
-    padding-right: 1.125em;
-  }
-  .newsletter-img {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-right: -71px;
+   display: block;
+   position: relative;
+   width: 100%;
+   margin: -4em 0.625em;
+   margin-bottom: 1.5em;
+   overflow: hidden;
+ }
+ .carousel-inner {
+   display: flex;
+   transition: transform 0.5s ease;
+ }
+ .carousel-item {
+   width: 95%;
+   box-sizing: border-box;
+   flex-shrink: 0;
+ }
+ .inNews{
+   display: none;
+ }
+ .inNews-single {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   width: 95vw;
+ }
+ .inNews-badge {
+   width: auto;
+   font: 1em "Helvetica Neue LT W1G", Helvetica; /* 16px = 1em */
+ }
+ .inNews-single > img {
+   margin-top: 0.625em;
+   width: 93%;
+ }
+ .inNews-desc {
+   padding-right: 1.125em;
+ }
+  .newsletter-img{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   margin-right: -71px;
   }
   .newsletter {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    gap: 2.5em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    margin-top: 3.3125em;
+   width: 100%;
+   height: auto;
+   padding: 0;
+   gap: 2.5em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgb(255, 255, 255);
+   margin: 0;
+   margin-top: 3.3125em;
+ }
+ 
+ .newsletter-text {
+   margin: 0 0.625em;
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+ }
+ 
+ .newsletter-text-top {
+   font: 1.375em "Helvetica Neue LT W1G", Helvetica;
+   margin-left: 0.425em;
+   font-weight: 700;
+ }
+ 
+ .newsletter-tect-mid {
+   font: 1em "Helvetica Neue LT W1G", Helvetica;
+   margin-left: 0.625em;
+   line-height: 1.5em;
+ }
+ 
+ .email {
+   margin-left: 0.625em;
+   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 500;
+ }
+ 
+ input {
+   width: 17.1875em;
+   height: 2.1875em;
+   border-radius: 0.125em 0 0 0;
+   background-color: rgb(255, 255, 255);
+   border: 0.00625em solid gray;
+   outline: #00000040;
+   margin-top: 0.5em;
+   margin-left: 1.25em;
+   padding: 0.3125em;
+ }
+ input::placeholder {
+  color: #222222;
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+ }
+ 
+ .newsletter-img > img {
+  position: absolute;
+  right: 0;
+ }
+ .newsletter-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: -0.5em;
+ }
+ .podcast{
+  height: auto;
+  padding: 0;
+  margin-top: 3.125em;
+ }
+ .podcast-title {
+  color: var(--Accent-Teal, #00677f);
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375em;
+  letter-spacing: 0.1125em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 1.5625em;
+  margin-left: 1.2em;
+ }
+ .inNews-title{
+   padding-left: 1em;
+ }
+ .main-podcast{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.5em;
+ }
+ .podcast-left, .podcast-right{
+  width: 100vw;
+  height: auto;
+  background-color: rgba(245, 245, 245, 1);
+  display: flex;
+  align-items: start;
+  gap: 1.25em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+ }
+ .podcast-play{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 0.625em;
+  margin-top: 1.25em;
+  flex-direction: column;
+ }
+ .podcast-top{
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 1.25em;
+  text-align: left;
+  display: none;
+ }
+ .podcast-top2{
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 1.25em;
+  text-align: left;
+ }
+ .play-text{
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 600;
+  line-height: 1.375em;
+  text-align: left;
+  color: rgba(231, 19, 22, 1);
+  margin-top: -0.0625em;
+  margin-right: 0.625em;
+ }
+ .c-para {
+ font: 1.2125em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ padding-left: 0.3125em;
+ margin-top: 0.1875em;
+ line-height: 1.2em; 
+ display: block !important;
+ width: 330% !important;
+ }
+  .press{
+   display: none;
   }
-
-  .newsletter-text {
-    margin: 0 0.625em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .newsletter-text-top {
-    font: 1.375em "Helvetica Neue LT W1G", Helvetica;
-    margin-left: 0.625em;
-    font-weight: 700;
-  }
-
-  .newsletter-tect-mid {
-    font: 1em "Helvetica Neue LT W1G", Helvetica;
-    margin-left: 0.625em;
-    line-height: 1.5em;
-  }
-
-  .email {
-    margin-left: 0.625em;
-    font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 500;
-  }
-
-  input {
-    width: 17.1875em;
-    height: 2.1875em;
-    border-radius: 0.125em 0 0 0;
-    background-color: rgb(255, 255, 255);
-    border: 0.00625em solid gray;
-    outline: #00000040;
-    margin-top: 0.5em;
-    margin-left: 1.25em;
-    padding: 0.3125em;
-  }
-  input::placeholder {
-    color: #222222;
-    font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-  }
-
-  .newsletter-img > img {
-    position: absolute;
-    right: 0;
-  }
-  .newsletter-img {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-right: -0.5em;
-  }
-  .podcast {
-    height: auto;
-    padding: 0;
-    margin-top: 3.125em;
-  }
-  .podcast-title {
-    color: var(--Accent-Teal, #00677f);
-    font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.375em;
-    letter-spacing: 0.1125em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-bottom: 1.5625em;
-    margin-left: 0.625em;
-  }
-  .main-podcast {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: 2.5em;
-  }
-  .podcast-left,
-  .podcast-right {
-    width: 100vw;
-    height: auto;
-    background-color: rgba(245, 245, 245, 1);
-    display: flex;
-    align-items: start;
-    gap: 1.25em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-  }
-  .podcast-play {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    gap: 0.625em;
-    margin-top: 1.25em;
-    flex-direction: column;
-  }
-  .podcast-top {
-    font: 1em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 500;
-    line-height: 1.5em;
-    margin-top: 1.25em;
-    text-align: left;
-    display: none;
-  }
-  .podcast-top2 {
-    font: 1em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 500;
-    line-height: 1.5em;
-    margin-top: 1.25em;
-    text-align: left;
-  }
-  .play-text {
-    font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 600;
-    line-height: 1.375em;
-    text-align: left;
-    color: rgba(231, 19, 22, 1);
-    margin-top: -0.0625em;
-    margin-right: 0.625em;
-  }
-  .c-para {
-    font: 1.3125em "Helvetica Neue LT W1G", Helvetica;
-    font-weight: 400;
-    padding-left: 0.3125em;
-    margin-top: 0.1875em;
-    line-height: 1.275em;
-    display: block !important;
-    width: 331% !important;
-  }
-  .press {
-    display: none;
-  }
-  .press-single {
-    width: 97%;
+  .press-single{
+   width: 97%;
   }
   .carousel1 {
-    display: block !important;
-    position: relative;
-    width: 100%;
-    margin: 5.25em 0.625em;
-    overflow: hidden;
-  }
-
-  .carousel1-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  .carousel1-item {
-    width: 95%;
-    box-sizing: border-box;
-    flex-shrink: 0;
-  }
-
-  .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  .carousel-item {
-    width: 95%;
-    box-sizing: border-box;
-    flex-shrink: 0;
-  }
-}
-
-@media (min-width: 900px) {
+   display: block !important;
+   position: relative;
+   width: 100%;
+   margin: 5.25em 0.625em;
+   overflow: hidden;
+ }
+ 
+ .carousel1-inner {
+   display: flex;
+   transition: transform 0.5s ease;
+   padding-left: 1em;
+ }
+ 
+ .carousel1-item {
+   width: 95%;
+   box-sizing: border-box;
+   flex-shrink: 0;
+ }
+ 
+ .carousel-inner {
+   display: flex;
+   transition: transform 0.5s ease;
+   padding-left: 1em;
+ }
+ 
+ .view {
+   padding-left: 0.4em;
+ }
+ 
+ .carousel-item {
+   width: 95%;
+   box-sizing: border-box;
+   flex-shrink: 0;
+ }
+ 
+ }
+ 
+ @media (min-width: 900px) {
   body {
-    font-size: 0.71em;
+    font-size: 0.71000em;
   }
-}
-
-@media (min-width: 1100px) {
+ }
+ 
+ @media (min-width: 1100px) {
   body {
-    font-size: 0.91em;
+    font-size: 0.91000em;
   }
-}
-
-@media (min-width: 1300px) {
+ }
+ 
+ @media (min-width: 1300px) {
   body {
     font-size: 1.0001em;
   }
-}
-
-@media (min-width: 1500px) {
+ }
+ 
+ @media (min-width: 1500px) {
   body {
     font-size: 1.1113em;
   }
-}
-
-@media (min-width: 1600px) {
+ }
+ 
+ @media (min-width: 1600px) {
   body {
     font-size: 1.2501em;
   }
-}
-
-@media (min-width: 1800px) {
+ }
+ 
+ @media (min-width: 1800px) {
   body {
     font-size: 1.3335em;
   }
-}
-
-@media (min-width: 1900px) {
+ }
+ 
+ @media (min-width: 1900px) {
   body {
     font-size: 1.5em;
   }
-}
-
-@media (min-width: 2200px) {
+ }
+ 
+ @media (min-width: 2200px) {
   body {
     font-size: 2em;
   }
-}
-@media (min-width: 2400px) {
+ }
+ @media (min-width: 2400px) {
   body {
     font-size: 2em;
   }
-}
-
-@media (min-width: 2800px) {
+ }
+ 
+ @media (min-width: 2800px) {
   body {
     font-size: 2em;
   }
-}
-
-@media (min-width: 3200px) {
+ }
+ 
+ @media (min-width: 3200px) {
   body {
     font-size: 2em;
   }
-}
-
-@media (min-width: 3400px) {
+ }
+ 
+ @media (min-width: 3400px) {
   body {
     font-size: 2em;
   }
-}
-
-@media (min-width: 3800px) {
+ }
+ 
+ @media (min-width: 3800px) {
   body {
     font-size: 3em;
   }
-}
-
-@media (min-width: 4200px) {
+ }
+ 
+ @media (min-width: 4200px) {
   body {
     font-size: 4em !important;
   }
-}
+ }

@@ -538,7 +538,7 @@
         </div>
       </div>
       <div class="carousel-dots"></div>
-      <p class="c-btn" style="margin-left: 5px">View All News</p>
+      <p class="c-btn view" style="margin-left: 5px">View All News</p>
     </div>
     <div class="inNews">
       <p class="inNews-title">IN THE NEWS</p>
@@ -834,9 +834,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span style="text-decoration: underline; color: #ffffff"
-              >www.thermofisher.com</span
-            >
+            <span>www.thermofisher.com</span>
           </a>
         </p>
       </div>
@@ -932,7 +930,7 @@
           currentIndex = 0;
         }
 
-        const offset = -currentIndex * 93;
+        const offset = -currentIndex * 90;
         carouselInner.style.transform = `translateX(${offset}%)`;
 
         updateDots();
@@ -968,7 +966,7 @@
 
       function moveToSlide(index) {
         currentIndex = index;
-        const offset = -currentIndex * 93;
+        const offset = -currentIndex * 90;
         const carouselInner = document.querySelector(".carousel-inner");
         carouselInner.style.transform = `translateX(${offset}%)`;
         updateDots();
@@ -993,7 +991,7 @@
         } else if (currentIndexPress1 >= totalItems1) {
           currentIndexPress1 = 0;
         }
-        const offset1 = -currentIndexPress1 * 93;
+        const offset1 = -currentIndexPress1 * 90;
         carouselInner1.style.transform = `translateX(${offset1}%)`;
 
         updateDots1();
@@ -1029,7 +1027,7 @@
 
       function moveToSlide1(index) {
         currentIndexPress1 = index;
-        const offset1 = -currentIndexPress1 * 93;
+        const offset1 = -currentIndexPress1 * 90;
         const carouselInner1 = document.querySelector(".carousel1-inner");
         carouselInner1.style.transform = `translateX(${offset1}%)`;
         updateDots1();

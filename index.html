@@ -811,6 +811,9 @@
       </div>
     </div>
     <div class="footer">
+      <div class="logo-footer">
+        <img src="./Images/Group.svg" alt="" />
+      </div>
       <div class="footer-first">
         <p class="footer-first-top">About Thermo Fisher Scientific</p>
         <p class="footer-first-mid">
@@ -1040,6 +1043,7 @@
       });
 
       let currentIndex2 = 0;
+      let startX, endX;
 
       function moveCarousel2(direction) {
         const carouselInner2 = document.querySelector(".carousel2-inner");
@@ -1054,7 +1058,7 @@
           currentIndex2 = 0;
         }
 
-        const offset2 = -currentIndex2 * 80;
+        const offset2 = -currentIndex2 * 85;
         carouselInner2.style.transform = `translateX(${offset2}%)`;
       }
 
@@ -1073,8 +1077,29 @@
         }
       }
 
+      function handleTouchStart(event) {
+        startX = event.touches[0].clientX;
+      }
+
+      function handleTouchMove(event) {
+        endX = event.touches[0].clientX;
+      }
+
+      function handleTouchEnd() {
+        if (startX > endX + 50) {
+          moveCarousel2(1);
+        } else if (startX < endX - 50) {
+          moveCarousel2(-1);
+        }
+      }
+
       window.addEventListener("load", () => {
         setInterval(autoMoveCarousel2, 8000);
+
+        const carousel2 = document.querySelector(".carousel2-inner");
+        carousel2.addEventListener("touchstart", handleTouchStart);
+        carousel2.addEventListener("touchmove", handleTouchMove);
+        carousel2.addEventListener("touchend", handleTouchEnd);
       });
 
       window.addEventListener("resize", () => {
@@ -1084,6 +1109,7 @@
       });
 
       let currentIndex3 = 0;
+      let startX3, endX3;
 
       function moveCarousel3(direction) {
         const carouselInner3 = document.querySelector(".carousel3-inner");
@@ -1098,7 +1124,7 @@
           currentIndex3 = 0;
         }
 
-        const offset3 = -currentIndex3 * 80;
+        const offset3 = -currentIndex3 * 85;
         carouselInner3.style.transform = `translateX(${offset3}%)`;
       }
 
@@ -1117,8 +1143,29 @@
         }
       }
 
+      function handleTouchStart3(event) {
+        startX3 = event.touches[0].clientX;
+      }
+
+      function handleTouchMove3(event) {
+        endX3 = event.touches[0].clientX;
+      }
+
+      function handleTouchEnd3() {
+        if (startX3 > endX3 + 50) {
+          moveCarousel3(1);
+        } else if (startX3 < endX3 - 50) {
+          moveCarousel3(-1);
+        }
+      }
+
       window.addEventListener("load", () => {
         setInterval(autoMoveCarousel3, 8000);
+
+        const carousel3 = document.querySelector(".carousel3-inner");
+        carousel3.addEventListener("touchstart", handleTouchStart3);
+        carousel3.addEventListener("touchmove", handleTouchMove3);
+        carousel3.addEventListener("touchend", handleTouchEnd3);
       });
 
       window.addEventListener("resize", () => {

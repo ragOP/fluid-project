@@ -301,6 +301,12 @@
   font: 0.9em "Helvetica Neue LT W1G", Helvetica;
  }
  
+ .footer-first-bootom >  a {
+   text-decoration: underline !important;
+   color: #C9CACC !important;
+   padding-top: 1em !important;
+ }
+ 
  .footer-second {
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em; 
@@ -904,6 +910,9 @@
   z-index: 100;
   display: none;
  }
+ .logo-footer {
+   display: none;
+ }
  .bottom-title {
   font: 2.125em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
@@ -1033,11 +1042,21 @@
  }
  }
  @media (max-width: 899px) {
+   .pre-footer {
+     padding: 2.5em 1em;
+   }
+   .logo-footer {
+     display: block;
+     width: 100%;
+   }
+   .logo-footer > img {
+     width: 8em;
+     margin-bottom: 1em;
+   }
   .mission-about {
    padding: 1em;
    height: auto;
  }
- 
  .mission-main-about {
    margin-top: 0.625em;
    flex-direction: column-reverse;
@@ -1495,9 +1514,11 @@
  }
  .pre-footer-second {
   order: 1;
+  padding: 1em 0;
  }
  .pre-footer-third {
   order: 2;
+  padding: 1em 0;
  }
  .pre-footer-first {
   order: 3;
@@ -1512,6 +1533,7 @@
  }
  .footer-icons {
   gap: 0;
+  margin-left: -1em;
  }
  .connect-top,
  .connect-bottom {
@@ -1527,6 +1549,7 @@
  }
  .footer {
   margin-top: 0;
+  padding: 2.5em 1em;
  }
  }
  .brand-banner {
@@ -1670,8 +1693,4 @@
     font-size: 4em;
   }
  }
- 
- 
- 
- 
  

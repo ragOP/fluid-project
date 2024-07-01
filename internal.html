@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Page</title>
+    <link rel="stylesheet" href="internal-style.css" />
+    <style>
+      .menubar {
+        display: inline-block;
+        cursor: pointer;
+      }
+      #myLinks {
+        top: 1.25em;
+        left: 0;
+        width: 100%;
+        background: #fff;
+      }
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 2.1875em;
+        height: 0.3125em;
+        background-color: #333;
+        margin: 0.375em 0;
+        transition: 0.4s;
+      }
+
+      .change .bar1 {
+        transform: translate(0, 0.6875em) rotate(-45deg);
+      }
+
+      .change .bar2 {
+        opacity: 0;
+      }
+
+      .change .bar3 {
+        transform: translate(0, -0.6875em) rotate(45deg);
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 0.625em 1.25em;
+        z-index: 12;
+        align-items: center;
+      }
+
+      .topnav #myLinks {
+        display: none;
+      }
+      .topnav ul {
+        padding-left: 0;
+      }
+      .topnav li {
+        color: #000;
+        padding: 0.875em 1em;
+        text-decoration: none;
+        font-size: 1.0625em;
+        display: block;
+      }
+      .topnav li.active {
+        background-color: #fff;
+      }
+      .topnav a.icon {
+        background: #fff;
+        display: block;
+        position: absolute;
+        right: 1.375em;
+        top: 0.625em;
+      }
+
+      .dropdown-container {
+        display: none;
+        color: #000;
+      }
+      .dropdown-left {
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home">
+          <div class="navlogo mob">
+            <img id="logo" src="./Images/mob-tf-logo.png" alt="" /></div
+        ></a>
+        <ul id="myLinks">
+          <li class="dropdown-btn" href="#news">About</li>
+          <ul class="dropdown-container">
+            <li href="#">Link 1</li>
+            <li href="#">Link 2</li>
+            <li href="#">Link 3</li>
+          </ul>
+          <li href="#contact">Corporate Social Responsibility</li>
+          <li href="#about">Investors</li>
+          <li>Newsroom</li>
+          <li>Careers</li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
+          <div class="menubar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <script>
+      function myFunction(y) {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+        y.classList.toggle("change");
+      }
+    </script>
+    <div class="desk-nav">
+      <div class="navbar">
+        <a href="/Pages/HomePage/Home.html">
+          <div class="navlogo">
+            <img id="logo" src="./Images/logo.png" alt="" />
+          </div>
+        </a>
+        <div class="menulinks">
+          <div class="menu">
+            <ul>
+              <li id="about-menu-item" class="">
+                <a id="about-link" class="" href="../About.html">ABOUT</a>
+              </li>
+              <li id="csr-menu-item" class="">
+                <a id="csr-link" class="" href="../CSR/Csr.html"
+                  >CORPORATE SOCIAL RESPONSIBILITY</a
+                >
+              </li>
+              <li id="investor-menu-item" class="">
+                <a id="investor-link" class="" href="../CSR/Csr.html"
+                  >INVESTOR</a
+                >
+              </li>
+              <li id="newsroom-menu-item" class="">
+                <a id="newsroom-link" class="" href="javascript:void(0)"
+                  >NEWSROOM</a
+                >
+              </li>
+              <li id="career-menu-item" class="">
+                <a id="career-link" class="" href="/career">CAREER</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-icon">
+            <img src="./Images/Search.png" alt="" />
+          </div>
+          <button class="button">
+            <a href="https://www.thermofisher.com/" target="_blank"
+              >Thermofisher.com</a
+            >
+
+            <img class="link-img" src="./Images/external-link.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div id="blur-overlay"></div>
+      <div id="dropdown" class="dropdown">
+        <div class="dropdown-left">
+          <div class="dropdown-left-img">
+            <img src="./Images/ss.svg" alt="" style="max-width: 100%" />
+          </div>
+          <div class="dropdown-left-top">
+            <img src="./Images/dropa.svg" alt="" />
+            <p class="dropdown-top-text">Our Mission</p>
+          </div>
+          <p class="dropdown-left-mid">
+            Everything we do starts with our Mission: to <br />
+            enable our customers to make the world <br />
+            <span>healthier, cleaner, and safer.</span>
+          </p>
+          <div class="dropdown-left-bottom">
+            <img src="./Images/dropd.svg" alt="" />
+            <p class="bottom-text">Read More</p>
+          </div>
+        </div>
+        <div style="width: 60%">
+          <div class="dropdown-mid">
+            <div class="main-dropdown">
+              <div class="dropdown-header">
+                <img src="./Images/Icon1.png" alt="" />
+                <p class="heder-drop">Press Releases</p>
+              </div>
+            </div>
+            <div class="main-dropdown">
+              <div class="dropdown-header">
+                <img src="./Images/Icon1.png" alt="" />
+                <p class="heder-drop">In the News</p>
+              </div>
+            </div>
+            <div class="main-dropdown">
+              <div
+                style="margin-bottom: 17px !important"
+                class="dropdown-header"
+              >
+                <img src="./Images/Icon1.png" alt="" />
+                <p class="heder-drop">Podcast : Science with a twist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-right">
+          <img src="./Images/Vector (4).svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="newsroom-about">
+      <p class="newsroom-about-title">Investors / Recent Acquisitions</p>
+      <div class="newsroom-about-main">
+        <div class="newsroom-about-left">
+          <p class="newsroom-about-left-heading">
+            Together we are <br /><span> building a brighter future</span>
+          </p>
+        </div>
+        <div class="newsroom-about-about">
+          <div class="newsroom-top">
+            As the world leader in serving science, we understand that we have a
+            unique opportunity and responsibility to use our position
+          </div>
+          <div class="newsroom-right">
+            to make a positive impact on society – not only by enabling our
+            customers’ success, but also through our actions as a Company to
+            make the world a better place.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-news">
+      <img class="main-img" src="./Images/unclear.png" alt="" />
+      <div class="main-poistion">
+        <img class="main-cover" src="./Images/saa.png" alt="" />
+      </div>
+    </div>
+    <div class="main-news-desc">
+      <p class="desc-first">
+        At Thermo Fisher, our focus on high-impact innovation enables our
+        customers to address some of the world’s greatest challenges. As we
+        deliver new technologies and services, we help our customers break new
+        ground in their important work. This includes helping them accelerate
+        research so that they can bring life-changing therapies to patients.
+      </p>
+      <p class="desc-second">
+        We have long believed that good corporate governance is important to
+        ensure that Thermo Fisher is managed for the long-term benefit of our
+        shareholders and other stakeholders. The company’s success requires a
+        robust corporate governance framework.
+      </p>
+      <div class="readmore">
+        <img src="./Images/redsmall.svg" alt="" />
+        <p>Read More</p>
+      </div>
+    </div>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item first-slider">
+          <div class="slider-left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item first-slider">
+          <div class="slider-left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item first-slider">
+          <div class="slider-left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item first-slider">
+          <div class="slider-left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots"></div>
+    </div>
+    <div class="carousel1">
+      <div class="carousel1-inner">
+        <div class="carousel1-item first-slider">
+          <div class="slider-left left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+        <div class="carousel1-item first-slider">
+          <div class="slider-left left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+        <div class="carousel1-item first-slider">
+          <div class="slider-left left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+        <div class="carousel1-item first-slider">
+          <div class="slider-left left">
+            <img src="./Images/un.png" alt="Image 1" />
+          </div>
+          <div class="slider-right right">
+            <p class="slider-right-top">
+              UK Pension Investment Strategy and Governance
+            </p>
+            <p class="slider-right-mid">
+              A Statement of Investment Principles (SIP) is a regulatory
+              requirement for UK occupational pension schemes. However, more
+              importantly, it is a clear statement of how the Trustee will
+              manage the Scheme’s investments, setting out the Trustee’s
+              investment principles that govern its decisions about investments.
+            </p>
+            <p class="slider-right-bottom">
+              The SIP must set out the Trustee’s policies on how assets are
+              invested, including in regards to social, environmental and
+              governance considerations, and how investment risks are measured
+              and managed.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel1-dots"></div>
+    </div>
+    <div class="press">
+      <p class="inNews-title">3 Column Section Title</p>
+      <div class="press-main">
+        <div class="press-single">
+          <img src="./Images/un.png" alt="" />
+          <p class="press-date">January 5th, 2023</p>
+          <p class="press-desc">
+            Whether they are improving life for patients, protecting our global
+            climate or keeping people safe, our customers look to Thermo Fisher
+            Scientific for innovative solutions.
+          </p>
+          <div class="press-btn">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p class="animation-btn">Read More</p>
+          </div>
+        </div>
+        <div class="press-single">
+          <img src="./Images/un.png" alt="" />
+          <p class="press-date">January 5th, 2023</p>
+          <p class="press-desc">
+            Whether they are improving life for patients, protecting our global
+            climate or keeping people safe, our customers look to Thermo Fisher
+            Scientific for innovative solutions.
+          </p>
+          <div class="press-btn">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p class="animation-btn">Read More</p>
+          </div>
+        </div>
+        <div class="press-single">
+          <img src="./Images/un.png" alt="" />
+          <p class="press-date">January 5th, 2023</p>
+          <p class="press-desc">
+            Whether they are improving life for patients, protecting our global
+            climate or keeping people safe, our customers look to Thermo Fisher
+            Scientific for innovative solutions.
+          </p>
+          <div class="press-btn">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p class="animation-btn">Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="framework">
+      <div class="framework-title-main">FOUR SECTION LAYOUT</div>
+      <div class="framework-main">
+        <div class="framework-single">
+          <img src="./Images/Clipboard 1.svg" alt="" />
+          <div class="main-frame-des">
+            <p class="framework-title">Reporting</p>
+            <p class="framework-description">
+              In line with our commitment to transparency, we publish an annual
+              CSR Report that outlines our progress consistent with our CSR
+              strategy.
+            </p>
+          </div>
+        </div>
+        <div class="framework-single">
+          <img src="./Images/g10.svg" alt="" />
+          <div class="main-frame-des">
+            <p class="framework-title">Materiality Assessment</p>
+            <p class="framework-description">
+              In line with the Company’s growth and evolution, we conducted an
+              initial materiality assessment in 2019 through an in-depth process
+              led by an independent third-party advisor.
+            </p>
+          </div>
+        </div>
+        <div class="framework-single">
+          <img src="./Images/g1.svg" alt="" />
+          <div class="main-frame-des">
+            <p class="framework-title">Stakeholder Engagement</p>
+            <p class="framework-description">
+              We are committed to creating sustainable value for all our
+              stakeholders.
+            </p>
+          </div>
+        </div>
+        <div class="framework-single">
+          <img src="./Images/g11.svg" alt="" />
+          <div class="main-frame-des">
+            <p class="framework-title">Sustainable Finance</p>
+            <p class="framework-description">
+              We embed our environmental, social and governance (ESG) priorities
+              within the business to drive ownership and progress toward our
+              commitments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="readmore">
+        <img src="./Images/redsmall.svg" alt="" />
+        <p>Read more</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">Section Title</div>
+      <div class="section-main">
+        <div class="section-single">
+          <div class="section-single-title">
+            Whether they are improving life for patients, protecting our global
+            climate or keeping people safe, our customers look to Thermo Fisher
+            Scientific for innovative solutions.
+          </div>
+          <img src="./Images/un.png" alt="" />
+          <div class="readmore">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p>Read More</p>
+          </div>
+        </div>
+        <div class="section-single">
+          <div class="section-single-title">
+            Whether they are improving life for patients, protecting our global
+            climate or keeping people safe, our customers look to Thermo Fisher
+            Scientific for innovative solutions.
+          </div>
+          <img src="./Images/un.png" alt="" />
+          <div class="readmore">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p>Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drop-main">
+      <div class="main-header-title">Section Title</div>
+      <div class="main-news">
+        <img class="main-img" src="./Images/unclear.png" alt="" />
+        <div class="main-poistion1">
+          <img class="main-cover" src="./Images/saa.png" alt="" />
+          <div class="image-txt">
+            <p class="txt-top">
+              Public policy engagement and <span>executive compensation</span>
+            </p>
+            <p class="txt-mid">
+              For policies on our public policy engagement and political
+              participation, as well as ESG-related elements in executive
+              compensation, please refer to our latest proxy statement on the
+              SEC filings website.
+            </p>
+            <p class="txt-read">READ MORE</p>
+            <div class="carousel4-dots txt-slider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-section-desc">
+        At Thermo Fisher, our focus on high-impact innovation enables our
+        customers to address some of the world’s greatest challenges. As we
+        deliver new technologies and services, we help our customers break new
+        ground in their important work. This includes helping them accelerate
+        research so that they can bring life-changing therapies to patients. We
+        have long believed that good corporate governance is important to ensure
+        that Thermo Fisher is managed for the long-term benefit of our
+        shareholders and other stakeholders.
+      </div>
+    </div>
+    <div class="csr-report">
+      <p class="csr-report-titile">Section Title</p>
+      <div class="csr-report-main">
+        <div class="csr-report-one">
+          <div class="csr-report-one-left">
+            <p>Corporate Social Responsibility <span>Report </span>2023</p>
+            <img src="./Images/h2.png" alt="" />
+          </div>
+          <div class="csr-report-two-right">
+            <img src="./Images/Group 24.png" alt="" />
+            <div class="download">
+              <p>
+                Thermo Fisher Scientific : <span>CSR Annual Report 2023</span>
+              </p>
+              <img src="./Images/u1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="csr-report-two">
+          <p>
+            Our Corporate Social Responsibility (CSR) reports are available to
+            provide further detail to our CSR Programs and the progress we make
+            each year. You can download current and previous years reports in
+            PDF format below.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="highlights">
+      <p class="highlight-title">HIGHLIGHTS</p>
+      <div class="main-highlight">
+        <div class="single-highlight">
+          <img src="./Images/un.png" alt="" />
+          <div class="title-highlight">$1.3 billion</div>
+          <p class="desc-highlight">In R&D Investment</p>
+        </div>
+        <div class="single-highlight">
+          <img src="./Images/un.png" alt="" />
+          <div class="title-highlight">$1.3 billion</div>
+          <p class="desc-highlight">In R&D Investment</p>
+        </div>
+        <div class="single-highlight">
+          <img src="./Images/un.png" alt="" />
+          <div class="title-highlight">$1.3 billion</div>
+          <p class="desc-highlight">In R&D Investment</p>
+        </div>
+        <div class="single-highlight">
+          <img src="./Images/un.png" alt="" />
+          <div class="title-highlight">$1.3 billion</div>
+          <p class="desc-highlight">In R&D Investment</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo-footer">
+        <img src="./Images/Group.svg" alt="" />
+      </div>
+      <div class="footer-first">
+        <p class="footer-first-top">About Thermo Fisher Scientific</p>
+        <p class="footer-first-mid">
+          Thermo Fisher Scientific Inc. (NYSE: TMO) is the world leader in
+          serving science, with annual revenue over $40 billion. Our Mission is
+          to enable our customers to make the world healthier, cleaner and
+          safer. Whether our customers are accelerating life sciences research,
+          solving complex analytical challenges, increasing productivity in
+          their laboratories, improving patient health through diagnostics or
+          the development and manufacture of life-changing therapies, we are
+          here to support them. Our global team delivers an unrivaled
+          combination of innovative technologies, purchasing convenience and
+          pharmaceutical services through our industry-leading brands, including
+          Thermo Scientific, Applied Biosystems, Invitrogen, Fisher Scientific,
+          Unity Lab Services, Patheon and PPD.
+        </p>
+        <p class="footer-first-bootom">
+          For more information, please visit
+          <a
+            href="https://www.thermofisher.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span style="text-decoration: underline; color: #c9cacc"
+              >www.thermofisher.com</span
+            >
+          </a>
+        </p>
+      </div>
+      <div class="footer-second">
+        <p class="footer-second-top">Company</p>
+        <p class="footer-second-p">Sustainability</p>
+        <p class="footer-second-p">Investors</p>
+        <p class="footer-second-p">Newsroom</p>
+        <p class="footer-second-p">Careers</p>
+        <p class="footer-second-p">About</p>
+        <p class="footer-second-p">Contact</p>
+      </div>
+      <div class="footer-third">
+        <p class="footer-third-top">Brands</p>
+        <p class="footer-second-p">Thermo Scientific</p>
+        <p class="footer-second-p">Applied Biosystems</p>
+        <p class="footer-second-p">Invitrogen</p>
+        <p class="footer-second-p">Fisher Scientific</p>
+        <p class="footer-second-p">Unity Labs Services</p>
+        <p class="footer-second-p">Patheon</p>
+        <p class="footer-second-p">PPD</p>
+      </div>
+      <div class="footer-fourth">
+        <p class="footer-third-top">Connect</p>
+        <div class="footer-icons">
+          <div class="connect-top">
+            <a
+              href="https://www.linkedin.com/company/thermo-fisher-scientific/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./Images/linkedin-161-svgrepo-com.svg" alt="LinkedIn" />
+            </a>
+            <a
+              href="./youtube.com/thermofisher"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./Images/youtube-168-svgrepo-com.svg" alt="YouTube" />
+            </a>
+            <a
+              href="https://www.instagram.com/thermofisherscientific/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./Images/instagram-167-svgrepo-com.svg"
+                alt="Instagram"
+              />
+            </a>
+          </div>
+          <div class="connect-bottom">
+            <a
+              href="https://twitter.com/thermofisher"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./Images/pajamas_twitter.svg" alt="Twitter" />
+            </a>
+            <a
+              href="https://www.facebook.com/thermofisher/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./Images/facebook-176-svgrepo-com.svg" alt="Facebook" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pre-footer">
+      <img class="pre-footer-logo" src="./Images/Logo.svg" alt="sds" />
+      <p class="pre-footer-first">
+        © Copyright 2006-2023 Thermo Fisher Scientific Inc. All rights reserved.
+      </p>
+      <p class="pre-footer-second">Terms & Conditions</p>
+      <p class="pre-footer-third">Privacy Information Center</p>
+    </div>
+    <script src="internal.js"></script>
+    <script>
+      var dropdown1 = document.getElementsByClassName("dropdown-btn");
+      console.log(dropdown);
+      var i;
+      for (i = 0; i < dropdown1.length; i++) {
+        dropdown1[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdown1Content = this.nextElementSibling;
+          if (dropdown1Content.style.display === "block") {
+            dropdown1Content.style.display = "none";
+          } else {
+            dropdown1Content.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script>
+      let currentIndex = 0;
+
+      function moveCarousel(direction) {
+        const carouselInner = document.querySelector(".carousel-inner");
+        const items = document.querySelectorAll(".carousel-item");
+        const totalItems = items.length;
+
+        currentIndex += direction;
+
+        if (currentIndex < 0) {
+          currentIndex = totalItems - 1;
+        } else if (currentIndex >= totalItems) {
+          currentIndex = 0;
+        }
+
+        const offset = -currentIndex * 100;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+
+        updateDots();
+      }
+
+      function autoMoveCarousel() {
+        moveCarousel(1);
+      }
+
+      function createDots() {
+        const carouselDots = document.querySelector(".carousel-dots");
+        const items = document.querySelectorAll(".carousel-item");
+        items.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("carousel-dot");
+          dot.addEventListener("click", () => moveToSlide(index));
+          carouselDots.appendChild(dot);
+        });
+      }
+
+      function updateDots() {
+        const dots = document.querySelectorAll(".carousel-dot");
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function moveToSlide(index) {
+        currentIndex = index;
+        const offset = -currentIndex * 100;
+        const carouselInner = document.querySelector(".carousel-inner");
+        carouselInner.style.transform = `translateX(${offset}%)`;
+        updateDots();
+      }
+
+      window.addEventListener("load", () => {
+        createDots();
+        updateDots();
+        setInterval(autoMoveCarousel, 7000);
+      });
+
+      let currentIndexCarousel1 = 0;
+
+      function moveCarousel1(direction) {
+        const carouselInner = document.querySelector(
+          ".carousel1 .carousel1-inner"
+        );
+        const items = document.querySelectorAll(".carousel1 .carousel1-item");
+        const totalItems = items.length;
+
+        currentIndexCarousel1 += direction;
+
+        if (currentIndexCarousel1 < 0) {
+          currentIndexCarousel1 = totalItems - 1;
+        } else if (currentIndexCarousel1 >= totalItems) {
+          currentIndexCarousel1 = 0;
+        }
+
+        const offset = -currentIndexCarousel1 * 100;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+
+        updateDotsCarousel1();
+      }
+
+      function autoMoveCarousel1() {
+        moveCarousel1(1);
+      }
+
+      function createDotsCarousel1() {
+        const carouselDots = document.querySelector(
+          ".carousel1 .carousel1-dots"
+        );
+        const items = document.querySelectorAll(".carousel1 .carousel1-item");
+        items.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("carousel1-dot");
+          dot.addEventListener("click", () => moveToSlideCarousel1(index));
+          carouselDots.appendChild(dot);
+        });
+      }
+
+      function updateDotsCarousel1() {
+        const dots = document.querySelectorAll(".carousel1 .carousel1-dot");
+        dots.forEach((dot, index) => {
+          if (index === currentIndexCarousel1) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function moveToSlideCarousel1(index) {
+        currentIndexCarousel1 = index;
+        const offset = -currentIndexCarousel1 * 100;
+        const carouselInner = document.querySelector(
+          ".carousel1 .carousel1-inner"
+        );
+        carouselInner.style.transform = `translateX(${offset}%)`;
+        updateDotsCarousel1();
+      }
+
+      window.addEventListener("load", () => {
+        createDotsCarousel1();
+        updateDotsCarousel1();
+        setInterval(autoMoveCarousel1, 5000);
+      });
+    </script>
+  </body>
+</html>

@@ -5,119 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .menubar {
-        display: inline-block;
-        cursor: pointer;
-      }
-      #myLinks {
-        top: 1.25em;
-        left: 0;
-        width: 100%;
-        background: #fff;
-      }
-
-      .bar1,
-      .bar2,
-      .bar3 {
-        width: 2.1875em;
-        height: 0.3125em;
-        background-color: #333;
-        margin: 0.375em 0;
-        transition: 0.4s;
-      }
-
-      .change .bar1 {
-        transform: translate(0, 0.6875em) rotate(-45deg);
-      }
-
-      .change .bar2 {
-        opacity: 0;
-      }
-
-      .change .bar3 {
-        transform: translate(0, -0.6875em) rotate(45deg);
-      }
-
-      .topnav {
-        overflow: hidden;
-        background-color: #fff;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        padding: 0.625em 1.25em;
-        z-index: 12;
-        align-items: center;
-      }
-
-      .topnav #myLinks {
-        display: none;
-      }
-      .topnav ul {
-        padding-left: 0;
-      }
-      .topnav li {
-        color: #000;
-        padding: 0.875em 1em;
-        text-decoration: none;
-        font-size: 1.0625em;
-        display: block;
-      }
-      .topnav li.active {
-        background-color: #fff;
-      }
-      .topnav a.icon {
-        background: #fff;
-        display: block;
-        position: absolute;
-        right: 1.375em;
-        top: 0.625em;
-      }
-
-      .dropdown-container {
-        display: none;
-        color: #000;
-      }
-      .dropdown-left {
-        width: 40%;
-      }
-    </style>
   </head>
   <body>
     <div class="mobile-container">
       <div class="topnav">
-        <a href="#home">
-          <div class="navlogo mob">
-            <img id="logo" src="./Images/mob-tf-logo.png" alt="" /></div
-        ></a>
+        <div class="logo-mobb">
+          <a href="#home">
+            <div class="navlogo mob">
+              <img id="logo" src="./Images/mob-tf-logo.png" alt="" /></div
+          ></a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
+            <div class="menubar">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </a>
+        </div>
         <ul id="myLinks">
+          <div class="search-mob">
+            <input type="text" name="" placeholder="Search" />
+            <img src="./Images/Search.png" alt="" srcset="" />
+          </div>
           <li class="dropdown-btn" href="#news">About</li>
           <ul class="dropdown-container">
-            <li href="#">Link 1</li>
-            <li href="#">Link 2</li>
-            <li href="#">Link 3</li>
+            <li class="dropdown-item">
+              <div class="dropdown-toggle">
+                <img id="company-icon" src="./Images/Icon1.png" alt="Icon" />
+                <p id="company-text">Our Company</p>
+              </div>
+              <ul class="nested-main">
+                <li class="nested">Our Mission</li>
+                <li class="nested">Our Values</li>
+                <li class="nested">Innovation</li>
+              </ul>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Our Stories</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Information Security</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Supplier Resources</p>
+              </div>
+            </li>
           </ul>
-          <li href="#contact">Corporate Social Responsibility</li>
-          <li href="#about">Investors</li>
-          <li>Newsroom</li>
+          <li class="dropdown-btn" href="#contact">
+            Corporate Social Responsibility
+          </li>
+          <ul class="dropdown-container">
+            <li href="">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Corporate Governance</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Ethics and Compliance</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Operations</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Colleagues</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Communities</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Environment</p>
+              </div>
+            </li>
+          </ul>
+          <li class="dropdown-btn" href="#about">Investors</li>
+          <ul class="dropdown-container">
+            <li href="">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Overview</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>News, Events and Presentations</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Stock Information</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Financials</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Governance</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Resources</p>
+              </div>
+            </li>
+          </ul>
+          <li class="dropdown-btn" href="#newsroom">Newsroom</li>
+          <ul class="dropdown-container">
+            <li href="">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Press Releases</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>In the News</p>
+              </div>
+            </li>
+            <li href="#">
+              <div class="dropdown-toggle">
+                <img src="./Images/Icon1.png" alt="" />
+                <p>Podcast: Science With a Twist</p>
+              </div>
+            </li>
+          </ul>
           <li>Careers</li>
         </ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
-          <div class="menubar">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </a>
       </div>
     </div>
     <script>
       function myFunction(y) {
         var x = document.getElementById("myLinks");
+        var topnav = document.getElementsByClassName("topnav");
         if (x.style.display === "block") {
           x.style.display = "none";
+          topnav[0].style.height = "auto";
         } else {
           x.style.display = "block";
+          if (window.innerWidth >= 750 && window.innerWidth <= 899) {
+            topnav[0].style.height = "45%";
+          } else {
+            topnav[0].style.height = "70%";
+          }
         }
         y.classList.toggle("change");
       }
@@ -133,7 +193,7 @@
           <div class="menu">
             <ul>
               <li id="about-menu-item" class="">
-                <a id="about-link" class="" href="../About.html">ABOUT</a>
+                <a id="about-link" class="" href="../about.html">ABOUT</a>
               </li>
               <li id="csr-menu-item" class="">
                 <a id="csr-link" class="" href="../CSR/Csr.html"
@@ -607,7 +667,7 @@
             </p>
             <div class="leadershipn-btn">
               <img src="./Images/redsmall.svg" alt="" />
-              <p class="animation-btn def change1">Read whitepaper</p>
+              <p class="animation-btn def change-txt1">Read whitepaper</p>
             </div>
           </div>
         </div>
@@ -693,7 +753,9 @@
       </div>
       <div class="leadership-btn">
         <img src="./Images/redsmall.svg" alt="" />
-        <p class="animation-btn change">Learn more about thought leadership</p>
+        <p class="animation-btn change-txt">
+          Learn more about thought leadership
+        </p>
       </div>
     </div>
     <div class="main-media with-background">
@@ -1337,8 +1399,8 @@
     </script>
     <script>
       function updateText() {
-        const element1 = document.querySelector(".change");
-        const element2 = document.querySelector(".change1");
+        const element1 = document.querySelector(".change-txt");
+        const element2 = document.querySelector(".change-txt1");
 
         if (window.innerWidth <= 850) {
           element1.textContent = "Learn more";
@@ -1348,12 +1410,37 @@
           element2.textContent = "Read whitepaper";
         }
       }
-
-      // Initial check
       updateText();
-
-      // Listen for window resize events
       window.addEventListener("resize", updateText);
+    </script>
+    <script>
+      document
+        .querySelector(".dropdown-toggle")
+        .addEventListener("click", function () {
+          const nestedMenu = document.querySelector(".nested-main");
+          const icon = document.getElementById("company-icon");
+          const text = document.getElementById("company-text");
+          nestedMenu.classList.toggle("show");
+          if (nestedMenu.classList.contains("show")) {
+            icon.src = "./Images/minus.svg";
+            text.classList.add("red-text");
+          } else {
+            icon.src = "./Images/Icon1.png";
+            text.classList.remove("red-text");
+          }
+        });
+    </script>
+    <script>
+      const heads = document.getElementsByClassName("dropdown-btn");
+      for (let head of heads) {
+        head.addEventListener("click", () => {
+          if (head.style.fontWeight === "600") {
+            head.style.fontWeight = "normal";
+          } else {
+            head.style.fontWeight = "600";
+          }
+        });
+      }
     </script>
   </body>
 </html>

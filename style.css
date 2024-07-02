@@ -3,6 +3,158 @@
   padding: 0;
   box-sizing: border-box;
  }
+ .mobile-container{
+   display: none;
+ }
+ .red-text {
+   color: red;
+ }
+ .menubar {
+   display: inline-block;
+   cursor: pointer;
+ }
+ #myLinks {
+   top: 1.25em;
+   left: 0;
+   width: 100%;
+   background: #fff;
+ }
+ 
+ .bar1,
+ .bar2,
+ .bar3 {
+   width: 2.1875em;
+   height: 0.3125em;
+   background-color: #333;
+   margin: 0.375em 0;
+   transition: 0.4s;
+ }
+ 
+ .change .bar1 {
+   transform: translate(0, 0.6875em) rotate(-45deg);
+ }
+ 
+ .change .bar2 {
+   opacity: 0;
+ }
+ 
+ .change .bar3 {
+   transform: translate(0, -0.6875em) rotate(45deg);
+ }
+ 
+ .topnav {
+   overflow: hidden;
+   background-color: #fff;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 12;
+   align-items: center;
+ }
+ 
+ .logo-mobb {
+   position: fixed;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   background-color: #fff;
+   height: 8%;
+   top: 0;
+   padding-left: 1em;
+   z-index: 10000;
+ }
+ 
+ .nested-main {
+   margin-top: 1em;
+   display: none;
+ }
+ 
+ .nested-main.show {
+   display: block; /* Show when the class 'show' is added */
+ }
+ 
+ .nested {
+   font: 1em "Helvetica Neue LT W1G", Helvetica !important;
+   margin-left: 0.5em;
+   padding: 1em !important;
+   color: gray !important;
+ }
+ 
+ .topnav #myLinks {
+   display: none;
+   margin-top: 3em;
+   padding: 1em;
+ }
+ .topnav ul {
+   padding-left: 0;
+ }
+ .dropdown-toggle > p {
+   font: 1em "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 400;
+ }
+ .topnav li {
+   color: #000;
+   padding: 1em 1em;
+   text-decoration: none;
+   font-size: 1.0625em;
+   display: block;
+   font: 1.2em "Helvetica Neue LT W1G", Helvetica;
+   border-bottom: 1px solid rgb(226, 226, 226);
+   font-weight: 400;
+ }
+ .topnav li.active {
+   background-color: #fff;
+ }
+ .topnav a.icon {
+   background: #fff;
+   display: block;
+   position: absolute;
+   right: 1.375em;
+ }
+ .dropdown-container > li > div {
+   display: flex;
+   gap: 0.5em;
+   align-items: center;
+ }
+ 
+ .dropdown-container > li > ul > li {
+   border: none;
+ }
+ 
+ .dropdown-container {
+   display: none;
+   color: #000;
+   border-bottom: 1px solid rgb(226, 226, 226);
+ }
+ .dropdown-container > li {
+   border: none;
+ }
+ .dropdown-left {
+   width: 40%;
+ }
+ .search-mob{
+   margin-top: 1.5em;
+   display: flex;
+   align-items: center;
+   width: 105%;
+ }
+ .search-mob > input {
+   padding: 2em 1em;
+   width: 100%;
+   background-color: #EBEBEC;
+   outline: none;
+   border: none;
+   border-radius: 0.2em;
+   margin: 0;
+ }
+ .search-mob > input::placeholder{
+   font: 1em "Helvetica Neue LT W1G", Helvetica;
+   color: gray;
+ }
+ .search-mob > img {
+   position: relative;
+   right: 2em;
+ }
  .navbar {
   position: fixed;
   top: 0;
@@ -1437,12 +1589,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(10px); /* Apply the blur effect */
-  background: rgba(255, 255, 255, 0.3); /* Optional: to darken the background slightly */
-  z-index: 1; /* Ensure the blur is below the navbar and dropdown */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
   display: none;
  }
- @media only screen and (max-width: 991px){
+ @media (max-width: 899px){
   .mobile-container{
     display: block;
   }
@@ -1515,6 +1667,9 @@
  }
  
  @media (max-width: 899px) {
+   .topnav {
+     overflow-y: scroll;
+   }
    .logo-footer {
      display: block;
      width: 100%;
@@ -2109,6 +2264,9 @@
  @media (min-width: 750px) and (max-width: 899px){
    .leadership-cover-bottom {
      width: 96%;
+   }
+   .search-mob > input{
+     width: 95%;
    }
  }
  

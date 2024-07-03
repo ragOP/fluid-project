@@ -238,34 +238,38 @@
   cursor: pointer;
  }
  .button {
-  background-color: #ccc;
-  border: none;
-  padding: 0.625em;
-  border-radius: 0.3125em;
-  cursor: pointer;
-  margin-right: 1.25em;
-  position: relative;
-  color: #fff;
-  transition: right 0.3s ease, opacity 0.3s ease;
-  background: linear-gradient(to left, #ccc 50%, red 50%) right;
-  background-size: 200%;
-  transition: 0.5s ease-out;
- }
- .def {
-  color: #fff !important;
- }
- .button:hover {
-  background-position: left;
- }
- .button:hover .link-img {
-  display: inline-block;
- }
- .link-img {
-  display: none;
-  width: 1em;
-  margin-top: 0.1875em;
-  margin-left: 0.1875em;
- }
+   background-color: #ccc;
+   border: none;
+   padding: 0.625em;
+   border-radius: 0.3125em;
+   cursor: pointer;
+   margin-right: 1.25em;
+   position: relative;
+   color: #fff;
+   transition: right 0.3s ease, opacity 0.3s ease;
+   background: linear-gradient(to left, #ccc 50%, red 50%) right;
+   background-size: 200%;
+   transition: 0.5s ease-out;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+   width: 10em;
+  }
+  .def {
+   color: #fff !important;
+  }
+  .button:hover {
+   background-position: left;
+   width: 11.5em;
+  }
+  .button:hover .link-img {
+   opacity: 1;
+  }
+  .link-img {
+   opacity: 0;
+   width: 0.9em;
+   display: inline-block;
+  }
  .menulinks {
   display: flex;
   align-items: center;
@@ -384,7 +388,7 @@
  }
  .press {
   height: auto;
-  margin-top: 0.625em;
+  margin-top: 5em;
   padding: 0 6.25em;
   margin-bottom: 3.75em;
   display: block;
@@ -448,15 +452,23 @@
   display: flex;
   align-items: center;
   gap: 0.5em;
-  margin-top: 5.625em;
+  margin-top: 6em;
  }
  
+ .inNews-btn {
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+   margin-top: 3em;
+  }
+ 
  .press-btn > p {
-  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font: 0.88em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.2em;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-align: left;
+  text-transform: uppercase;
  }
  
  .press-btn > img {
@@ -639,6 +651,7 @@
   height: auto;
   background-color: rgba(0, 8, 27, 1);
   padding: 3.125em 6.25em;
+  margin-top: 2em;
  }
  
  .leadershipn-title {
@@ -901,8 +914,7 @@
  .inNews {
   height: auto;
   padding: 3.125em 6.25em;
-  margin-bottom: 6.25em;
-  margin-top: -2.1875em;
+  margin-top: 2em;
  }
  
  .inNews-title {
@@ -913,7 +925,7 @@
   letter-spacing: 0.1em;
   text-align: left;
   margin-bottom: 2.5em;
-  padding-left: 0.6em;
+  padding-left: 0em;
  }
  
  .inNews-main {
@@ -1043,7 +1055,7 @@
   background-color: #f5f5f5;
   padding: 2em 6.25em;
   margin: 0;
-  margin-top: 5em;
+  margin-top: 1em;
   padding-bottom: 9em !important;
  }
  
@@ -1241,6 +1253,7 @@
   background-color: #4a4a4a;
   padding: 2.5em 2.5em; 
   margin-top: 0.0625em; 
+  align-items: center;
  }
  
  .pre-footer-logo {
@@ -1284,13 +1297,14 @@
   display: flex;
   flex-direction: row;
   gap: 1.25em;
-  margin-top: 0.625em;
+  margin-top: 1.5em;
  }
  
  .connect-top,
  .connect-bottom {
   display: flex;
   flex-direction: column;
+  gap: 1em;
  }
  
  .connect-top > img,
@@ -1398,12 +1412,15 @@
   display: flex;
   align-items: center;
   gap: 0.625em;
-  margin-top: 2em;
+  margin-top: 2.5em;
   cursor: pointer;
  }
  
  .main-btn-newsroom > p {
-  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font: 0.9em "Helvetica Neue LT W1G", Helvetica;
+  text-transform: uppercase;
+  color: red;
+  font-weight: 600;
  }
  
  .animation-btn:hover {
@@ -1541,7 +1558,7 @@
   margin-left: 0.9375em;
  }
  .podcast-btn > p {
-  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font: 0.88em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.04em;
@@ -1562,12 +1579,13 @@
  }
  .animation-btn {
   cursor: pointer;
-  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font: 0.88em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.04em;
   text-align: left;
   color: #4A4A4A;
+  text-transform: uppercase;
  }
  .round {
   width: 1.875em;
@@ -1676,7 +1694,7 @@
    }
    .logo-footer > img {
      width: 8em;
-     margin-bottom: 1em;
+     margin-bottom: 2.5em;
    }
  
    .carousel3-inner, .carousel2-inner {
@@ -1713,6 +1731,7 @@
  }
  .pre-footer-first {
    order: 3;
+   width: 45%;
  }
  .footer-third {
    width: 50%;
@@ -1724,7 +1743,11 @@
  }
  .footer-icons {
    gap: 0;
-   margin-left: -1em;
+   margin-left: -0.5em;
+ }
+ .footer-third-top {
+   margin-top: 1.5em;
+   margin-left: 0.5em;
  }
  .connect-top,
  .connect-bottom {
@@ -2006,7 +2029,7 @@
    display: block;
    position: relative;
    width: 100%;
-   margin: -4em 0.625em;
+   margin: 4em 0.625em;
    margin-bottom: 1.5em;
    overflow: hidden;
  }

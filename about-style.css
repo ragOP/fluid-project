@@ -1,7 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (min-width: 900px){
+  body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+    font-size: 1.1vw;
+  }
+}
+@media (max-width: 899px){
+  *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
 }
 .mobile-container{
   display: none;
@@ -169,7 +179,7 @@
   line-height: 1.375em;
   font-weight: 700;
   color: #00677f;
-  padding: 0 5em;
+  padding: 0 5.6em;
 }
 .banner-left {
   position: relative;
@@ -177,7 +187,7 @@
   width: 34%;
 }
 .banner-left-first {
-  width: 85%;
+  width: 88%;
 }
 .banner-right {
   position: relative;
@@ -187,17 +197,16 @@
 }
 .banner-right > img {
   width: 100%;
-  height: 13.56em;
+  height: 14.9em;
 }
 .banner-logos {
   display: flex;
   align-items: center;
-  /* width: 100%; */
   gap: 1.875em;
   flex-wrap: wrap;
   margin-top: 1.875em;
   margin-bottom: 1.875em;
-  padding-left: 5em;
+  padding-left: 6.3em;
 }
 .banner-right-text {
   position: absolute;
@@ -216,11 +225,11 @@
   margin-top: 5.375em;
   width: 11.78125em;
   height: 2.55em;
-  margin-left: 5em;
+  margin-left: 6.3em;
 }
 .logo-single {
-  width: 30%;
-  height: 22.0625em;
+  width: 24%;
+  height: 18.0625em;
   background-color: #f5f5f5;
   padding: 3.875em 3.125em;
   position: relative;
@@ -229,7 +238,7 @@
 
 .logo-single:hover {
   color: #fff;
-  padding: 1.25em 2.5em;
+  padding-left: 2em;
   cursor: pointer;
 }
 
@@ -284,16 +293,19 @@
 }
 
 .logo-single::after {
-  content: "\2192";
+  content: "";
   position: absolute;
-  bottom: 0.625em;
+  bottom: 1em;
   right: 15.625em;
-  color: white;
-  font-size: 2.5em;
-  font-weight: 900;
+  width: 2em;
+  height: 2em;
+  background-image: url('./Images/arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: right 0.3s ease, opacity 0.3s ease;
 }
+
 
 .logo-single:hover::after {
   right: 1.25em;
@@ -425,170 +437,176 @@
   justify-content: space-between;
   background-color: #4a4a4a;
   padding: 2.5em 2.5em;
-}
-
-.footer-column {
+ }
+ 
+ .footer-column {
   flex: 1;
-}
-
-.footer-first-top {
+ }
+ 
+ .footer-first-top {
   font: 700 1.125em/1.5em "Helvetica Neue LT W1G", Helvetica, sans-serif; /* 18px/24px */
   margin-bottom: 0.625em;
   color: #ebebec;
-}
-
-.footer-first-mid {
+ }
+ 
+ .footer-first-mid {
   font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.75em;
   text-align: left;
   color: #c9cacc;
-}
-
-.footer-first-bootom {
+ }
+ 
+ .footer-first-bootom {
   margin-top: 0.625em;
   color: #c9cacc;
-  font: 0.9em "Helvetica Neue LT W1G", Helvetica;
-}
-
-.footer-first-bootom > a {
-  text-decoration: underline !important;
-  color: #c9cacc !important;
-  padding-top: 1em !important;
-}
-
-.footer-second {
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
+ }
+ .footer-first-bootom >  a {
+   text-decoration: underline;
+   color: #C9CACC;
+   padding-top: 1em;
+ }
+ .footer-second {
   font-family: "Helvetica Neue LT W1G", Helvetica;
-  font-size: 1em;
+  font-size: 1em; 
   font-weight: 700;
   line-height: 1.5em;
   text-align: left;
   color: #ffffff;
-}
-
-.footer-second-top {
+ }
+ 
+ .footer-second-top {
   color: #ebebec;
   font-family: "Helvetica Neue LT W1G", Helvetica;
-}
-
-.footer-second-p {
+ }
+ 
+ .footer-second-p {
   color: white;
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   cursor: pointer;
   margin-top: 1em;
-}
-
-.footer-third {
+  white-space: nowrap;
+ }
+ 
+ .footer-third {
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   font-weight: 700;
   line-height: 1.5em;
   text-align: left;
   color: #ffffff;
-}
-
-.footer-third-top {
+ }
+ 
+ .footer-third-top {
   color: #ebebec;
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
-}
-
-.footer-third-p {
+ }
+ 
+ .footer-third-p {
   color: white;
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   cursor: pointer;
-}
-
-.footer-fourth {
+ }
+ 
+ .footer-fourth {
   font-family: "Helvetica Neue LT W1G", Helvetica;
   font-size: 1em;
   font-weight: 700;
   line-height: 2em;
   text-align: left;
   color: #ffffff;
-}
-
-.footer-fourth-top {
+ }
+ 
+ .footer-fourth-top {
   color: #ebebec;
-}
-
-.pre-footer {
+ }
+ 
+ .pre-footer {
   display: flex;
   justify-content: space-between;
   background-color: #4a4a4a;
-  padding: 2.5em 2.5em;
-  margin-top: 0.0625em;
-}
-
-.pre-footer-logo {
+  padding: 2.5em 2.5em; 
+  margin-top: 0.0625em; 
+  align-items: center;
+ }
+ 
+ .pre-footer-logo {
   height: 2em !important;
   margin-top: 0.625em;
   cursor: pointer;
-}
-
-.button > a {
+ }
+ 
+ .button > a {
   text-decoration: none;
   color: #fff;
-}
-
-.pre-footer-first {
+ }
+ 
+ .pre-footer-first {
   color: #ebebec;
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 1.375em;
+  line-height: 1.375em; 
   text-align: left;
-}
-
-.pre-footer-second {
-  color: #ebebec;
-  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-  font-weight: 400;
-  line-height: 1.375em;
-  text-align: left;
-  cursor: pointer;
-}
-
-.pre-footer-third {
+ }
+ 
+ .pre-footer-second {
   color: #ebebec;
   font: 0.875em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.375em;
   text-align: left;
   cursor: pointer;
-}
-
-.footer-icons {
+ }
+ 
+ .pre-footer-third {
+  color: #ebebec;
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  line-height: 1.375em;
+  text-align: left;
+  cursor: pointer;
+ }
+ 
+ .footer-icons {
   display: flex;
   flex-direction: row;
   gap: 1.25em;
-  margin-top: 0.625em;
-}
-
-.connect-top,
-.connect-bottom {
+  margin-top: 1.5em;
+ }
+ 
+ .connect-top,
+ .connect-bottom {
   display: flex;
   flex-direction: column;
-}
-
-.connect-top > img,
-.connect-bottom > img {
+  gap: 1em;
+ }
+ 
+ .connect-top > img,
+ .connect-bottom > img {
   margin-bottom: 0.625em;
-}
-
-.footer-first {
+ }
+ 
+ .footer-first {
   width: 50%;
-}
-.main-btn-newsroom2 {
+ }
+ 
+ .main-btn-newsroom2 {
   display: none;
-}
-
-.our-story-mob {
+ }
+ 
+ .hide {
+   display: none;
+ }
+ 
+ .our-story-mob {
   display: none;
-}
-
-.socials {
+ }
+ 
+ .socials {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -596,18 +614,19 @@
   gap: 0.625em;
   margin-top: -3.75em;
   padding-right: 1.875em;
-}
-
-.connect-top > a > img,
-.connect-bottom > a > img {
+ }
+ 
+ .connect-top > a > img, .connect-bottom > a > img {
   width: 1.5em;
-}
-
-.socials > p {
+ }
+ 
+ .socials > p {
   font: 1.25em "Helvetica Neue LT W1G", Helvetica;
   color: gray;
-}
-
+ }
+ .logo-footer {
+  display: none;
+ }
 .navbar {
   position: fixed;
   top: 0;
@@ -626,16 +645,18 @@
 }
 .navlogo {
   height: 5em;
-}
-.navlogo.mob > img {
-  height: unset;
-}
-.navlogo.mob {
-  height: unset;
-}
-.navlogo > img {
+ }
+ .navlogo.mob > img {
+   height: 2em;
+   width: 10em;
+   object-fit: cover;
+ }
+ .navlogo.mob {
+  height: 50%;
+ }
+ .navlogo > img {
   height: 100%;
-}
+ }
 
 .menu {
   display: flex;
@@ -693,7 +714,7 @@
 .button {
   background-color: #ccc;
   border: none;
-  padding: 0.625em;
+  padding: 0.725em;
   border-radius: 0.3125em;
   cursor: pointer;
   margin-right: 1.25em;
@@ -703,22 +724,25 @@
   background: linear-gradient(to left, #ccc 50%, red 50%) right;
   background-size: 200%;
   transition: 0.5s ease-out;
-}
-.def {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  width: 9.5em;
+ }
+ .def {
   color: #fff !important;
-}
-.button:hover {
+ }
+ .button:hover {
   background-position: left;
-}
-.button:hover .link-img {
+ }
+ .button:hover .link-img {
+  opacity: 1;
+ }
+ .link-img {
+  opacity: 0;
+  width: 0.9em;
   display: inline-block;
-}
-.link-img {
-  display: none;
-  width: 1em;
-  margin-top: 0.1875em;
-  margin-left: 0.1875em;
-}
+ }
 .menulinks {
   display: flex;
   align-items: center;
@@ -910,10 +934,17 @@
 }
 
 .button > a {
-  font: 1.1em "Helvetica Neue LT W1G", Helvetica;
+  font: 1.04em "Helvetica Neue LT W1G", Helvetica;
   text-decoration: none;
   color: #fff;
-}
+  position: relative;
+  left: 0.6em;
+  transition: 0.2s ease all;
+ }
+ 
+ .button:hover > a {
+   left: 0em;
+ }
 .leadership {
   width: 100%;
   height: auto;
@@ -1073,9 +1104,6 @@
   z-index: 100;
   display: none;
 }
-.logo-footer {
-  display: none;
-}
 .bottom-title {
   font: 2.125em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
@@ -1099,7 +1127,7 @@
   flex-wrap: wrap;
   gap: 2.6875em;
   margin-top: -0.5em;
-  padding: 0 2.4375em;
+  padding: 0 1.4375em;
 }
 .single-image {
   width: 20.5%;
@@ -1112,7 +1140,7 @@
   width: 100%;
 }
 .single-desc {
-  width: 100%;
+  width: 79%;
   height: 6.875em;
   background-color: #00677f;
   position: absolute;
@@ -1126,18 +1154,20 @@
   bottom: -3em;
 }
 .single-image::after {
-  content: "\2192";
+  content: "";
   position: absolute;
-  bottom: -1.125em;
+  bottom: -2.5em;
   right: 15.625em;
-  color: white;
-  font-size: 2.5em;
-  font-weight: 900;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url('./Images/arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: right 0.3s ease, opacity 0.3s ease;
 }
 .single-image:hover::after {
-  right: 0.2em;
+  right: 0.7em;
   opacity: 1;
 }
 .single-image:hover .single-desc {
@@ -1210,17 +1240,6 @@
 @media (max-width: 899px) {
   .topnav {
     overflow-y: scroll;
-  }
-  .pre-footer {
-    padding: 2.5em 1em;
-  }
-  .logo-footer {
-    display: block;
-    width: 100%;
-  }
-  .logo-footer > img {
-    width: 8em;
-    margin-bottom: 1em;
   }
   .mission-about {
     padding: 1em;
@@ -1431,7 +1450,7 @@
   .banner-left-img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -3em;
     margin-top: 4.375em;
     width: 11.78em;
     height: 2.55em;
@@ -1447,7 +1466,7 @@
 
   .logo-single:hover {
     color: #fff;
-    padding: 1.25em 2.5em;
+    padding-left: 2em;
   }
 
   .logo-single > img {
@@ -1508,19 +1527,21 @@
   }
 
   .logo-single::after {
-    content: "\2192";
+    content: "";
     position: absolute;
-    bottom: 0.1em;
+    bottom: 1em;
     right: 15.625em;
-    color: white;
-    font-size: 2.5em;
-    font-weight: 900;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('./Images/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     opacity: 0;
     transition: right 0.3s ease, opacity 0.3s ease;
   }
 
   .logo-single:hover::after {
-    right: 0.25em;
+    right: 0.75em;
     opacity: 1;
   }
 
@@ -1573,7 +1594,7 @@
   }
   .banner-left-first {
     width: 100%;
-    margin-bottom: 17.9em;
+    margin-bottom: 17.8em;
   }
   .banner-right {
     position: absolute;
@@ -1669,56 +1690,77 @@
     color: #fff;
     z-index: 100000;
   }
+  .logo-footer {
+    display: block;
+    width: 100%;
+  }
+  .logo-footer > img {
+    width: 8em;
+    margin-bottom: 2.5em;
+  }
+  .footer-first {
+   width: 100%;
+   order: 2;
+   padding-top: 3em;
+  }
   .pre-footer-logo {
-    display: none;
+   display: none;
   }
   .footer-second {
-    width: 50%;
-    order: 1;
+   width: 50%;
+   order: 1;
   }
   .pre-footer-first,
   .pre-footer-second,
   .pre-footer-third {
-    width: 100%;
+   width: 100%;
   }
   .pre-footer-second {
-    order: 1;
-    padding: 1em 0;
+   order: 1;
+   padding: 1em 0;
   }
   .pre-footer-third {
-    order: 2;
-    padding: 1em 0;
+   order: 2;
+   padding: 2em 0;
   }
   .pre-footer-first {
-    order: 3;
+   order: 3;
+   width: 45%;
   }
   .footer-third {
-    width: 50%;
-    order: 1;
+   width: 50%;
+   order: 1;
   }
   .footer-fourth {
-    width: 100%;
-    order: 4;
+   width: 100%;
+   order: 4;
   }
   .footer-icons {
-    gap: 0;
-    margin-left: -1em;
+   gap: 0;
+   margin-left: -0.5em;
+  }
+  .footer-third-top {
+   margin-top: 0em;
+   margin-left: 0.5em;
   }
   .connect-top,
   .connect-bottom {
-    flex-direction: row;
+   flex-direction: row;
   }
   .footer-icons a {
-    margin-left: 0.9375em;
+   margin-left: 0.9375em;
   }
   .footer,
   .pre-footer,
   .csr-report-four {
-    flex-wrap: wrap;
+   flex-wrap: wrap;
   }
   .footer {
-    margin-top: 0;
-    padding: 2.5em 1em;
+   margin-top: 0;
+   padding: 2.5em 1em;
+  }
+  .pre-footer{
+   padding: 2.5em 1em;
   }
 }
 .brand-banner {
@@ -1781,87 +1823,12 @@
   .main-about {
     margin-top: 5.75em;
   }
-}
-
-@media (min-width: 900px) {
-  body {
-    font-size: 0.71em;
-  }
-}
-
-@media (min-width: 1100px) {
-  body {
-    font-size: 0.91em;
-  }
-}
-
-@media (min-width: 1300px) {
-  body {
-    font-size: 1.0001em;
-  }
-}
-
-@media (min-width: 1500px) {
-  body {
-    font-size: 1.1113em;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    font-size: 1.2501em;
-  }
-}
-
-@media (min-width: 1800px) {
-  body {
-    font-size: 1.3335em;
-  }
-}
-
-@media (min-width: 1900px) {
-  body {
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 2200px) {
-  body {
-    font-size: 2em;
-  }
-}
-@media (min-width: 2400px) {
-  body {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 2800px) {
-  body {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 3200px) {
-  body {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 3400px) {
-  body {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 3800px) {
-  body {
-    font-size: 3em;
-  }
-}
-
-@media (min-width: 4200px) {
-  body {
-    font-size: 4em;
+  .logo-single {
+    width: 48% !important;
+    height: 18.75em;
+    background-color: #f5f5f5;
+    padding: 1.875em 2.5em;
+    position: relative;
+    transition: all 0.3s ease;
   }
 }

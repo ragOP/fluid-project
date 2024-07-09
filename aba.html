@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibration Test</title>
+</head>
+<body>
+    <h1>Welcome to Vibration Test</h1>
+    <p>Your phone should vibrate when you open this page.</p>
+
+    <script>
+        // Check if the Vibration API is supported
+        if (navigator.vibrate) {
+            // Vibrate for 500 milliseconds
+            navigator.vibrate(500);
+        } else {
+            console.log("Vibration API not supported by this browser.");
+        }
+    </script>
+</body>
+</html>

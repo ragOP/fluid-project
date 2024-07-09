@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibration Test</title>
+    <style>
+        /* Styles for the modal */
+        .modal {
+            display: block; /* Show the modal by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Style the close button (hidden) */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            display: none; /* Hide the close button */
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a non-closable popup.</p>
+        </div>
+    </div>
+
     <h1>Welcome to Vibration Test</h1>
     <p id="status">Checking vibration support...</p>
     <button id="vibrateButton">Vibrate</button>
@@ -28,6 +76,10 @@
             } else {
                 status.textContent = "Vibration API is not supported by this browser.";
             }
+
+            // Show the modal when the page loads
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'block';
         });
     </script>
 </body>

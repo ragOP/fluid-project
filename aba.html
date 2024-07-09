@@ -7,21 +7,26 @@
 </head>
 <body>
     <h1>Welcome to Vibration Test</h1>
-    <p>Your phone should vibrate when you open this page or click the button below.</p>
+    <p id="status">Checking vibration support...</p>
     <button id="vibrateButton">Vibrate</button>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            const status = document.getElementById('status');
+            const vibrateButton = document.getElementById('vibrateButton');
+
             if ('vibrate' in navigator) {
+                status.textContent = "Vibration API is supported.";
+
                 // Vibrate for 500 milliseconds when the page loads
                 navigator.vibrate(500);
 
                 // Add event listener to the button to trigger vibration
-                document.getElementById('vibrateButton').addEventListener('click', function() {
+                vibrateButton.addEventListener('click', function() {
                     navigator.vibrate([200, 100, 200]); // Vibrate pattern for better test
                 });
             } else {
-                console.log("Vibration API not supported by this browser.");
+                status.textContent = "Vibration API is not supported by this browser.";
             }
         });
     </script>

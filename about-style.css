@@ -13,6 +13,246 @@
    box-sizing: border-box;
   }
 }
+.home-diversity-layout {
+  background-color: #F5F5F5;
+  padding: 2em 6.5em;
+  margin-top: 4em;
+}
+
+.home-diversity-title {
+  padding-bottom: 2em;
+  color: var(--Accent-Teal, #00677f);
+font: 1.125em "Helvetica Neue LT W1G", Helvetica;
+font-style: normal;
+font-weight: 700;
+line-height: 1.375em;
+letter-spacing: 0.1125em;
+text-transform: uppercase;
+white-space: nowrap;
+
+}
+
+.home-diversity-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2em;
+}
+
+.home-diversity-content-head {
+font: 2em "Helvetica Neue LT W1G", Helvetica;
+  margin-top: 0;
+}
+
+.home-diversity-content-item {
+font: 1em "Helvetica Neue LT W1G", Helvetica;
+padding: 0em 5em 0em 0em;
+font-weight: 400;
+line-height: 2em;
+}
+
+.home-diversity-readmore img {
+  width: 4%;
+}
+
+.home-diversity-readmore {
+font: 0.9em "Helvetica Neue LT W1G", Helvetica;
+  align-items: center;
+  display: flex;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.home-diversity-readmore:hover{
+color: red;
+}
+
+.home-diversity-slider {
+  display: flex;
+  gap: 0.5em;
+}
+
+.home-diver-img-main {
+  width: 100%;
+  height: auto;
+  /* transition: transform 0.5s ease-in-out; */
+}
+
+.home-diver-img-small img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home-diver-img-small {
+  width: 4.65%;
+  height: 100%;
+  z-index: 11;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home-diver-img-small-2 img {
+  width: 100%;
+}
+
+.home-diver-img-small-2 {
+  width: 3.1%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out, left 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.home-diver-img-small-3 img {
+  width: 100%;
+}
+
+.home-diver-img-small-3 {
+  width: 1.552%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home-diversity-content-slider-item {
+  position: relative;
+}
+
+.home-diver-slider-content {
+  position: absolute;
+  top: 14em;
+  color: white;
+  padding: 3em;
+  z-index: 99;
+  width: 75%;
+}
+
+.home-diver-overlay {
+  position: absolute;
+  width: 88.5%;
+  height: 99%;
+  opacity: 0.4;
+  background-color: blue;
+  top: 0;
+  z-index: 10;
+
+}
+
+.home-diver-next {
+  gap: 0.5em;
+  display: flex;
+  display: flex;
+  align-items: center;
+
+}
+
+.home-diver-next > p{
+font: 0.8em "Helvetica Neue LT W1G", Helvetica;
+}
+
+.home-diver-next img {
+  width: 6%;
+  cursor: pointer;
+}
+
+.home-diversity-content-main {
+  position: relative;
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-diver-img-main-layout {
+  width: 100%;
+}
+
+.home-diversity-slider-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.home-diversity-slider-layout {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+@media (max-width: 899px) {
+.home-diversity-layout {
+  padding: 1.5em;
+  margin-top: 2em;
+}
+  .home-diversity-title {
+    color: var(--Accent-Teal, #00677f);
+    font: 1em "Helvetica Neue LT W1G", Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.375em;
+    letter-spacing: 0.1125em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .home-diversity-content {
+      display: grid;
+      grid-template-columns: none;
+      column-gap: 2em;
+      row-gap: 3em;
+  }
+
+  .home-diversity-content-head {
+      font-size: 2em;
+      margin-top: 0;
+      font-weight: 700;
+      padding: 0.5em;
+      line-height: 1.5em;
+  }
+  .home-diversity-content-main {
+    padding-left: 0;
+  }
+
+  .home-diversity-content-item {
+      font-size: 1.3em;
+      padding: 0.5em;
+      line-height: 1.5em;
+  }
+
+  .home-diversity-readmore {
+      font-size: 1em;
+      align-items: center;
+      display: flex;
+      gap: 0.5em;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 2em 1em;
+  }
+
+  .home-diver-next {
+      gap: 1em;
+      display: flex;
+      display: flex;
+      align-items: center;
+      padding: 3em 1em;
+  }
+
+  .home-diver-next p {
+      font-size: 1em;
+  }
+
+  .home-diver-next img {
+      width: 10%;
+  }
+  .home-diver-slider-content{
+    position: absolute;
+    top: 4em;
+color: white;
+padding: 3em;
+z-index: 99;
+width: 100%;
+  }
+
+  .home-diver-slider-content p {
+      font-size: 0.8em;
+  }
+}
 .mobile-container{
   display: none;
 }

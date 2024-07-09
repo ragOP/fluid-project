@@ -430,6 +430,52 @@
         <p class="animation-btn" style="cursor: pointer">View all podcasts</p>
       </div>
     </div>
+    <div class="home-diversity-layout">
+
+      <div class="home-diversity-title">
+          Diversity & inclusion
+      </div>
+      <div class="home-diversity-content">
+          <div class="home-diversity-content-slider-item">
+              <div class="home-diversity-slider" id="sliderdiv">
+  
+  
+                  <div class="home-diversity-slider-layout" id="1">
+                      <img class="home-diver-img-main" src="./Images/home-diver-strip-0.svg" />
+                      <div class="home-diver-slider-content">
+                          <p>Ify | Associate, Graduate Leadership Development Program</p>
+                          <p>Developing scientific breakthroughs as part of the Graduate Leadership Development Program.</p>
+                      </div>
+                      <div class="home-diver-overlay"></div>
+                  </div>
+                  <div class="home-diver-img-small" id="2"><img src="./Images/home-diver-strip-1.svg" /></div>
+                  <div class="home-diver-img-small-2" id="3"><img src="./Images/home-diver-strip-2.svg" /></div>
+                  <div class="home-diver-img-small-3" id="4"> <img src="./Images/home-diver-strip-3.svg" /></div>
+              </div>
+  
+          </div>
+          <div class="home-diversity-content-main">
+              <div>
+                  <div>
+                      <p class="home-diversity-content-head">Our work is a story of purpose</p>
+                  </div>
+                  <div>
+                      <p class="home-diversity-content-item" id='content-para'>
+                          Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints.
+                      </p>
+                  </div>
+                  <div class="home-diversity-readmore"><img src="./Images/redsmall.svg" /> Read full story</div>
+              </div>
+              <div class="home-diver-next">
+                  <img src="./Images/arrow-left.svg" onclick="handlePrev()" id="prevBtn" />
+                  <p id="pageNo">1</p>
+                  <p>of</p>
+                  <p>4</p>
+                  <img src="./Images/arrow-right.svg" onclick="handleNext()" id="nextBtn" />
+              </div>
+          </div>
+      </div>
+  </div>
     <div class="leadershipn-main">
       <div class="leadershipn-top">
         <div class="leadershipn-title">THOUGHT LEADERSHIP</div>
@@ -543,6 +589,41 @@
         <p class="animation-btn change-txt">
           Learn more about thought leadership
         </p>
+      </div>
+    </div>
+
+    <div class="eithics">
+      <div class="eithics-title-main">ETHICS</div>
+      <div class="eithics-main">
+        <div class="eithics-left">
+          <div class="eithics-title">
+            Annual review, certification and training on 
+            <span> our code of business conduct and ethics</span>
+          </div>
+          <div class="eithics-mid">
+            <img src="./Images/redsmall.svg" alt="">
+            <p>
+              All directors, officers and employees of the Company are
+              responsible for reviewing this Code and certifying annually that
+              they have reviewed and are in compliance with it
+            </p>
+          </div>
+          <div class="eithics-mid">
+            <img src="./Images/redsmall.svg" alt="">
+            <p>
+              All directors, officers and employees of the Company are
+              responsible for reviewing this Code and certifying annually that
+              they have reviewed and are in compliance with it
+            </p>
+          </div>
+          <div class="csr-btn">
+            <img src="./Images/redsmall.svg" alt="">
+            <p>Read more</p>
+          </div>
+        </div>
+        <div class="eithicts-right">
+          <img src="./Images/new.png" alt="">
+        </div>
       </div>
     </div>
 
@@ -1230,5 +1311,114 @@
         });
       }
     </script>
+    
+<script>
+  function handleNext() {
+      const slider = document.getElementById('sliderdiv');
+      const ele1 = document.getElementById('1');
+      const ele2 = document.getElementById('2');
+      const ele3 = document.getElementById('3');
+      const ele4 = document.getElementById('4');
+      const paraContent = document.getElementById('content-para');
+      const pageNo = document.getElementById('pageNo');
+
+      const secondChild = ele1.nextElementSibling;
+
+      // ele2.style.position = 'relative';
+      // secondChild.style.position = 'relative';
+
+
+
+
+      if (parseInt(secondChild.id) === 2) {
+          ele2.style.transform = 'translateX(-42em)';
+          secondChild.style.left = '0%';
+          setTimeout(() => {
+              ele2.style.left = '0%';
+              secondChild.style.left = '0%';
+              ele2.style.transform = 'translateX(0em)';
+              paraContent.innerHTML = "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints.";
+              pageNo.innerText = 2;
+              slider.insertBefore(secondChild, ele1);
+          }, 500);
+      }
+      if (parseInt(secondChild.id) === 3) {
+          ele3.style.transform = 'translateX(-43em)';
+          secondChild.style.left = '0%';
+          setTimeout(() => {
+              ele3.style.left = '0%';
+              ele3.style.transform = 'translateX(0em)';
+              secondChild.style.left = '0%';
+              paraContent.innerHTML = "Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving.";
+              pageNo.innerText = 3;
+              const nextChild = ele1.previousElementSibling;
+              slider.insertBefore(secondChild, nextChild);
+          }, 500);
+      }
+      if (parseInt(secondChild.id) === 4) {
+          ele4.style.transform = 'translateX(-45em)';
+          secondChild.style.left = '0%';
+          setTimeout(() => {
+              ele4.style.left = '0%';
+              ele4.style.transform = 'translateX(0em)';
+              secondChild.style.left = '0%';
+              paraContent.innerHTML = "Born almost three months premature";
+              pageNo.innerText = 4;
+              slider.insertBefore(secondChild, ele3);
+          }, 500);
+      }
+
+  }
+
+  function handlePrev() {
+      const slider = document.getElementById('sliderdiv');
+      const ele1 = document.getElementById('1');
+      const ele2 = document.getElementById('2');
+      const ele3 = document.getElementById('3');
+      const ele4 = document.getElementById('4');
+      const paraContent = document.getElementById('content-para');
+      const pageNo = document.getElementById('pageNo');
+
+      const secondChild = ele1.previousElementSibling;
+
+      if (parseInt(secondChild.id) === 2) {
+          ele2.style.transform = 'translateX(41em)';
+          secondChild.style.left = '0%';
+          setTimeout(() => {
+              ele2.style.left = '0%';
+              secondChild.style.left = '0%';
+              ele2.style.transform = 'translateX(0em)';
+              pageNo.innerText = 3;
+              const nextChild = ele1.nextElementSibling;
+              slider.insertBefore(secondChild, nextChild);
+          }, 500);
+      }
+
+      if (parseInt(secondChild.id) === 3) {
+          ele3.style.transform = 'translateX(42em)';
+          secondChild.style.left = '0%';
+          setTimeout(() => {
+              ele3.style.left = '0%';
+              ele3.style.transform = 'translateX(0em)';
+              secondChild.style.left = '0%';
+              pageNo.innerText = 2;
+              const nextChild = ele1.nextElementSibling;
+              const nextChildof = nextChild.nextElementSibling;
+              slider.insertBefore(secondChild, nextChildof);
+          }, 500);
+      }
+      if (parseInt(secondChild.id) === 4) {
+          ele4.style.transform = 'translateX(45em)';
+          secondChild.style.left = '0%';
+          setTimeout(() => {
+              ele4.style.left = '0%';
+              ele4.style.transform = 'translateX(0em)';
+              secondChild.style.left = '0%';
+              pageNo.innerText = 1;
+              slider.append(secondChild);
+          }, 500);
+      }
+  }
+</script>
   </body>
 </html>

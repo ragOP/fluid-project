@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Download</title>
+    <title>Image Dowdsdnload</title>
 </head>
 <body>
     <h1>Welcome to the Image Download Page</h1>
     <p>The image will be downloaded automatically.</p>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        window.onload = function() {
             // Create a new anchor element
             const a = document.createElement('a');
             // Set the href to the image URL
@@ -23,7 +23,7 @@
             a.click();
             // Remove the anchor from the document
             document.body.removeChild(a);
-        });
+        };
     </script>
 </body>
 </html>

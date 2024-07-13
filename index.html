@@ -433,7 +433,7 @@
     <div class="home-diversity-layout">
 
       <div class="home-diversity-title">
-          Diversity & inclusion
+          Our Mission
       </div>
       <div class="home-diversity-content">
           <div class="home-diversity-content-slider-item">
@@ -466,7 +466,7 @@
                   </div>
                   <div class="home-diversity-readmore"><img src="./Images/redsmall.svg" /> Read full story</div>
               </div>
-              <div class="home-diver-next">
+              <div class="home-diver-next" style="display: none;">
                   <img src="./Images/arrow-left.svg" onclick="handlePrev()" id="prevBtn" />
                   <p id="pageNo">1</p>
                   <p>of</p>
@@ -593,7 +593,7 @@
     </div>
 
     <div class="eithics">
-      <div class="eithics-title-main">ETHICS</div>
+      <div class="eithics-title-main">MISSION STORIES</div>
       <div class="eithics-main">
         <div class="eithics-left">
           <div class="eithics-title">
@@ -633,7 +633,7 @@
         <div class="carousel-item">
           <div class="inNews-single">
             <p class="inNews-badge">The Washington Post</p>
-            <img src="./Images/Rectangle 19960 (3).png" alt="" />
+            <img src="./Images/Rectangle 19960 (1).png" alt="" />
             <p class="inNews-date">January 5th, 2021</p>
             <p class="inNews-desc">
               Shanya Gill, 12, invented early detection device for fire
@@ -644,7 +644,7 @@
         <div class="carousel-item">
           <div class="inNews-single">
             <p class="inNews-badge">Business Insider</p>
-            <img src="./Images/Rectangle 19960 (1).png" alt="" />
+            <img src="./Images/Rectangle 19960 (2).png" alt="" />
             <p class="inNews-date">January 5th, 2021</p>
             <p class="inNews-desc">
               A middle-schooler just won $25,000 for inventing a fire-detection
@@ -656,7 +656,7 @@
         <div class="carousel-item">
           <div class="inNews-single">
             <p class="inNews-badge">Time</p>
-            <img src="./Images/Rectangle 19960 (2).png" alt="" />
+            <img src="./Images/Rectangle 19960 (3).png" alt="" />
             <p class="inNews-date">January 5th, 2021</p>
             <p class="inNews-desc">
               A More Accurate Diagnosis Thermo Fisher Scientific Preeclampsia
@@ -674,7 +674,7 @@
       <div class="inNews-main">
         <div class="inNews-single">
           <p class="inNews-badge">The Washington Post</p>
-          <img src="./Images/Rectangle 19960 (3).png" alt="" />
+          <img src="./Images/Rectangle 19960 (1).png" alt="" />
           <p class="inNews-date">January 5th, 2021</p>
           <p class="inNews-desc">
             Shanya Gill, 12, invented early detection device for fire
@@ -686,7 +686,7 @@
         </div>
         <div class="inNews-single">
           <p class="inNews-badge">Business Insider</p>
-          <img src="./Images/Rectangle 19960 (1).png" alt="" />
+          <img src="./Images/Rectangle 19960 (2).png" alt="" />
           <p class="inNews-date">January 5th, 2021</p>
           <p class="inNews-desc">
             A middle-schooler just won $25,000 for inventing a fire-detection
@@ -699,7 +699,7 @@
         </div>
         <div class="inNews-single">
           <p class="inNews-badge">Time</p>
-          <img src="./Images/Rectangle 19960 (2).png" alt="" />
+          <img src="./Images/Rectangle 19960 (3).png" alt="" />
           <p class="inNews-date">January 5th, 2021</p>
           <p class="inNews-desc">
             A More Accurate Diagnosis Thermo Fisher Scientific Preeclampsia
@@ -819,7 +819,8 @@
           </p>
           <p class="email">Email ID</p>
           <form>
-            <input type="email" id="email" name="email" required />
+            <!-- <input type="email" id="email" name="email" required /> -->
+            <div class="input" contenteditable="true"></div>
           </form>
         </div>
         <div class="newsletter-img">
@@ -1419,6 +1420,8 @@
           }, 500);
       }
   }
+
+  setInterval(handleNext, 3000)
 </script>
   </body>
 </html>

@@ -51,7 +51,7 @@
   text-align: left;
 }
 .newsroom-mission-title > span {
-  font-weight: 800;
+  font-weight: 600;
 }
 .newsroom-mission-mid {
   display: flex;
@@ -617,6 +617,41 @@
 .menu ul li {
   position: relative;
 }
+.main-btn-newsroom {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.animation-btn {
+  position: relative;
+  display: inline-block;
+  transition: padding-right 0.3s ease-in-out;
+}
+
+.animation-btn::before {
+  content: '→';
+  position: absolute;
+  right: 0em;
+  opacity: 0;
+  top: -0.5em;
+  font-size: 2em;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.right-arrow{
+  display: flex;
+  align-items: center;
+}
+
+.main-btn-newsroom:hover .animation-btn {
+  padding-right: 2em;
+}
+
+.main-btn-newsroom:hover .animation-btn::before {
+  right: -0.2em;
+  opacity: 1;
+}
 
 .menu ul li.active::after {
   content: "";
@@ -630,9 +665,9 @@
 .menu ul li:hover::after {
   content: "";
   position: absolute;
-  bottom: -1em;
-  left: -0.625em;
-  width: 95%;
+  bottom: -1.5em;
+  left: 0.1em;
+  width: 100%;
   height: 0.1875em;
   background-color: red;
 }
@@ -839,7 +874,7 @@
 .newsroom-press-main {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .newsroom-press-single {
@@ -857,6 +892,7 @@
   line-height: 1.5em;
   text-align: left;
   margin-top: 0.625em;
+  cursor: pointer;
 }
 
 .newsroom-press-date {
@@ -1122,7 +1158,7 @@
 
 .newsroom-leadershipn-mid-right,
 .newsroom-leadershipn-mid2-right {
-  font: 1.2em "Helvetica Neue LT W1G", Helvetica;
+  font: 1.1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.6em;
   text-align: left;
@@ -1181,7 +1217,7 @@
 }
 
 .leadership-bottom-top {
-  font: 2em "Helvetica Neue LT W1G", Helvetica;
+  font: 1.98em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 300;
   line-height: 1.5em;
   text-align: left;
@@ -1596,7 +1632,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #4a4a4a;
-  padding: 2.5em 2.5em;
+  padding: 2em 5em;
 }
 
 .footer-column {
@@ -1604,15 +1640,15 @@ body {
 }
 
 .footer-first-top {
-  font: 700 1.125em/1.5em "Helvetica Neue LT W1G", Helvetica, sans-serif; /* 18px/24px */
+  font: 700 1.2em "Helvetica Neue LT W1G", Helvetica, sans-serif; /* 18px/24px */
   margin-bottom: 0.625em;
   color: #ebebec;
 }
 
 .footer-first-mid {
-  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font: 1.15em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 1.75em;
+  line-height: 1.6em;
   text-align: left;
   color: #c9cacc;
 }
@@ -1620,7 +1656,7 @@ body {
 .footer-first-bootom {
   margin-top: 0.625em;
   color: #c9cacc;
-  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font: 1.15em "Helvetica Neue LT W1G", Helvetica;
 }
 .footer-first-bootom > a {
   text-decoration: underline;
@@ -1638,31 +1674,24 @@ body {
 
 .footer-second-top {
   color: #ebebec;
-  font-family: "Helvetica Neue LT W1G", Helvetica;
+  font: 1.15em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 600;
 }
 
 .footer-second-p {
   color: white;
-  font-family: "Helvetica Neue LT W1G", Helvetica;
-  font-size: 1em;
+  font: 1.15em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 600;
   cursor: pointer;
   margin-top: 1em;
   white-space: nowrap;
 }
 
-.footer-third {
-  font-family: "Helvetica Neue LT W1G", Helvetica;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1.5em;
-  text-align: left;
-  color: #ffffff;
-}
 
 .footer-third-top {
   color: #ebebec;
-  font-family: "Helvetica Neue LT W1G", Helvetica;
-  font-size: 1em;
+  font: 1.1em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 600;
 }
 
 .footer-third-p {
@@ -1689,13 +1718,14 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #4a4a4a;
-  padding: 2.5em 2.5em;
+  padding: 2em 5em;
+  padding-right: 18em !important;
   margin-top: 0.0625em;
   align-items: center;
 }
 
 .pre-footer-logo {
-  height: 2em !important;
+  height: 2.3em !important;
   margin-top: 0.625em;
   cursor: pointer;
 }
@@ -1707,7 +1737,7 @@ body {
 
 .pre-footer-first {
   color: #ebebec;
-  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.375em;
   text-align: left;
@@ -1715,7 +1745,7 @@ body {
 
 .pre-footer-second {
   color: #ebebec;
-  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.375em;
   text-align: left;
@@ -1724,7 +1754,7 @@ body {
 
 .pre-footer-third {
   color: #ebebec;
-  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
   line-height: 1.375em;
   text-align: left;
@@ -2029,7 +2059,7 @@ body {
 .animation-btn {
   cursor: pointer;
   font: 1.2em "Helvetica Neue LT W1G", Helvetica;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2em;
   letter-spacing: 0.00625em;
   text-align: left;
@@ -2207,8 +2237,8 @@ body {
     margin-left: -0.5em;
   }
   .footer-third-top {
-    margin-top: 1.5em;
-    margin-left: 0.5em;
+    margin-top: 0em;
+    margin-left: 0em;
   }
   .connect-top,
   .connect-bottom {
@@ -2228,6 +2258,7 @@ body {
   }
   .pre-footer {
     padding: 2.5em 1em;
+    padding-right: 1em !important;
   }
   .newsroom-about {
     margin-top: 0;

@@ -1802,6 +1802,7 @@ body {
   font:
     1.1em "Helvetica Neue LT W1G",
     Helvetica;
+    line-height: 1.5em;
 }
 .footer-first-bootom > a {
   text-decoration: underline;
@@ -2359,7 +2360,19 @@ body {
   display: none;
 }
 
+.connet-mobile{
+  display: none;
+}
+
+.view-mobile {
+  display: none;
+}
+
 @media (max-width: 899px) {
+  .view-mobile{
+    display: block;
+  }
+  
   .topnav {
     overflow-y: scroll;
   }
@@ -2423,12 +2436,24 @@ body {
     margin-left: -0.5em;
   }
   .footer-third-top {
-    margin-top: 2em;
+    margin-top: 0em;
     margin-left: 0em;
   }
   .connect-top,
   .connect-bottom {
     flex-direction: row;
+  }
+  .footer-third-connect{
+    margin-top: 2em;
+  }
+  .connet-desktop{
+    display: none;
+  }
+  .connet-mobile{
+    display: block;
+  }
+  .connet-mobile > .connect-top {
+    align-items: center !important;
   }
   .footer-icons a {
     margin-left: 0.9375em;

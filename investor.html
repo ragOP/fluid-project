@@ -35,6 +35,7 @@
   src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
 }</style></head>
 <body>
+    
 <div class="mobile-container">
     <div class="topnav" style="height: auto;">
         <div class="logo-mobb">
@@ -447,11 +448,8 @@
         });
     });
 </script>
-
 <style>
-
-@media (max-width: 899px) {
-}
+    
 .mobile-container {
  display: none;
 }
@@ -472,11 +470,11 @@
 .bar1,
 .bar2,
 .bar3 {
- width: 2.1875em;
- height: 0.3125em;
- background-color: #333;
- margin: 0.375em 0;
- transition: 0.4s;
+ width: 9.1875em;
+    height: 1.2em;
+    background-color: #333;
+    margin: 1.4em 0;
+    transition: 0.4s;
 }
 
 .change .bar1 {
@@ -488,7 +486,7 @@
 }
 
 .change .bar3 {
- transform: translate(0, -0.6875em) rotate(45deg);
+ transform: translate(0, -4.1em) rotate(45deg);
 }
 
 .topnav {
@@ -508,13 +506,13 @@
  align-items: center;
  background-color: #fff;
  height: 8%;
- top: 0;
- padding-left: 1em;
+ top: 1em;
+ padding: 0 4em;
  z-index: 10000;
 }
 
 .nested-main {
- margin-top: 1em;
+ margin-top: 0em;
  display: none;
 }
 
@@ -523,7 +521,9 @@
 }
 
 .nested {
- font: 1em "Helvetica Neue LT W1G", Helvetica !important;
+ font:
+   1em "Helvetica Neue LT W1G",
+   Helvetica !important;
  margin-left: 0.5em;
  padding: 1em !important;
  color: gray !important;
@@ -532,24 +532,26 @@
 .topnav #myLinks {
  display: none;
  margin-top: 3em;
- padding: 1em;
+ padding: 1em 4em;
 }
 .topnav ul {
  padding-left: 0;
 }
 .dropdown-toggle > p {
- font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1em "Helvetica Neue LT W1G",
+   Helvetica;
  font-weight: 400;
 }
 .topnav li {
  color: #000;
- padding: 1em 1em;
- text-decoration: none;
- font-size: 1.0625em;
- display: block;
- font: 1.2em "Helvetica Neue LT W1G", Helvetica;
- border-bottom: 1px solid rgb(226, 226, 226);
- font-weight: 400;
+    padding: 1em 1em;
+    text-decoration: none;
+    font-size: 1.0625em;
+    display: block;
+    font: 5.1em "Helvetica Neue LT W1G", Helvetica;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    font-weight: 400;
 }
 .topnav li.active {
  background-color: #fff;
@@ -558,7 +560,7 @@
  background: #fff;
  display: block;
  position: absolute;
- right: 1.375em;
+ right: 13.375em;
 }
 .dropdown-container > li > div {
  display: flex;
@@ -568,6 +570,7 @@
 
 .dropdown-container > li > ul > li {
  border: none;
+ padding: 0.1em 1em;
 }
 
 .dropdown-container {
@@ -577,32 +580,36 @@
 }
 .dropdown-container > li {
  border: none;
+ padding: 0.1em 1em;
 }
 .dropdown-left {
  width: 40%;
 }
 .search-mob {
- margin-top: 1.5em;
- display: flex;
- align-items: center;
- width: 105%;
+ margin-top: 18.5em;
+    display: flex;
+    align-items: center;
+    width: 97%;
+    padding: 0em;
 }
 .search-mob > input {
- padding: 2em 1em;
- width: 100%;
- background-color: #ebebec;
- outline: none;
- border: none;
- border-radius: 0.2em;
- margin: 0;
+ padding: 1.9em 1em;
+    width: 100%;
+    background-color: #ebebec;
+    outline: none;
+    border: none;
+    border-radius: 0.2em;
+    margin: 0;
 }
 .search-mob > input::placeholder {
- font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1.3em "Helvetica Neue LT W1G",
+   Helvetica;
  color: gray;
 }
 .search-mob > img {
  position: relative;
- right: 2em;
+    right: 7em;
 }
 .navbar {
  position: fixed;
@@ -611,7 +618,9 @@
  width: 100%;
  display: flex;
  justify-content: space-between;
- font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   0.875em "Helvetica Neue LT W1G",
+   Helvetica;
  font-style: normal;
  background-color: #ffffff;
  z-index: 1000;
@@ -624,9 +633,9 @@
  height: 6em;
 }
 .navlogo.mob > img {
- height: 2em;
- width: 10em;
- object-fit: cover;
+ height: 9.4em;
+    width: 41em;
+    object-fit: cover;
 }
 .navlogo.mob {
  height: 50%;
@@ -663,7 +672,7 @@
 }
 
 .animation-btn::after {
- content: '';
+ content: "";
  position: absolute;
  right: 1em;
  width: 1em;
@@ -672,7 +681,9 @@
  background-size: contain;
  background-repeat: no-repeat;
  opacity: 0;
- transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+ transition:
+   right 0.3s ease-in-out,
+   opacity 0.3s ease-in-out;
 }
 
 .right-arrow {
@@ -716,7 +727,9 @@
  cursor: pointer;
  color: #222;
  text-decoration: none;
- font: 1.1em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1.1em "Helvetica Neue LT W1G",
+   Helvetica;
  font-weight: 300;
  line-height: 1.375em;
  letter-spacing: 0.05em;
@@ -736,7 +749,9 @@
  margin-right: 2em;
  position: relative;
  color: #fff;
- transition: right 0.3s ease, opacity 0.3s ease;
+ transition:
+   right 0.3s ease,
+   opacity 0.3s ease;
  background: linear-gradient(to left, #97999c 50%, red 50%) right;
  background-size: 200%;
  transition: 0.5s ease-out;
@@ -753,6 +768,24 @@
 }
 .button:hover .link-img {
  opacity: 1;
+}
+.button > a {
+ text-decoration: none;
+ color: #fff;
+}
+.button > a {
+ font:
+   1em "Helvetica Neue LT W1G",
+   Helvetica;
+ text-decoration: none;
+ color: #fff;
+ position: relative;
+ left: 0.6em;
+ transition: 0.2s ease all;
+}
+
+.button:hover > a {
+ left: 0em;
 }
 .link-img {
  opacity: 0;
@@ -792,7 +825,9 @@
 }
 .dropdown-top-text {
  margin-top: -2.8125em;
- font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1.25em "Helvetica Neue LT W1G",
+   Helvetica;
  font-weight: 500;
  line-height: 1.75em;
  color: #fff;
@@ -803,13 +838,17 @@
  top: 8.125em;
  color: #fff;
  margin-left: 1.875em;
- font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   0.875em "Helvetica Neue LT W1G",
+   Helvetica;
  font-weight: 400;
  line-height: 1.375em;
  text-align: left;
 }
 .dropdown-left-mid > span {
- font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1.25em "Helvetica Neue LT W1G",
+   Helvetica;
  font-weight: 500;
  line-height: 1.75em;
  text-align: left;
@@ -823,7 +862,9 @@
  gap: 0.625em;
 }
 .bottom-text {
- font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   0.875em "Helvetica Neue LT W1G",
+   Helvetica;
  font-weight: 500;
  line-height: 1.375em;
  text-align: left;
@@ -847,7 +888,9 @@
  width: 0.9375em;
 }
 .heder-drop {
- font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1.25em "Helvetica Neue LT W1G",
+   Helvetica;
  font-weight: 400;
  line-height: 1.875em;
  text-align: center;
@@ -866,120 +909,91 @@
  text-decoration: none;
  color: black;
  opacity: 60%;
- font: 1.125em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1.125em "Helvetica Neue LT W1G",
+   Helvetica;
 }
 .submenu > p {
  color: black;
  opacity: 60%;
- font: 1.125em "Helvetica Neue LT W1G", Helvetica;
+ font:
+   1.125em "Helvetica Neue LT W1G",
+   Helvetica;
  padding-bottom: 0.625em;
  margin-top: -3.125em;
 }
 
-
-@media (max-width: 750px) {
-  .topnav {
-      overflow-y: scroll;
-  }
-
-  .mobile-container {
-      display: block;
-  }
-
-  .desk-nav {
-      display: none;
-  }
+@media (min-width: 700px) and (max-width: 900px){
+ .logo-mobb {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 8%;
+  top: 0em;
+  padding: 0 2em;
+  z-index: 10000;
+}
+.navlogo.mob > img {
+ height: 5.2em;
+ width: 21em;
+ object-fit: cover;
+}
+.topnav a.icon {
+ background: #fff;
+ display: block;
+ position: absolute;
+ right: 6.375em;
+}
+.bar1, .bar2, .bar3 {
+ width: 4.5em;
+ height: 0.6em;
+ background-color: #333;
+ margin: 0.8em 0;
+ transition: 0.4s;
+}
+.change .bar3 {
+ transform: translate(0, -2em) rotate(45deg);
+}
+.topnav #myLinks {
+ display: none;
+ margin-top: 3em;
+ padding: 1em 2.5em;
+}
+.search-mob {
+ margin-top: 9.5em;
+ display: flex;
+ align-items: center;
+ width: 97%;
+ padding: 0em;
+}
+.topnav li {
+ color: #000;
+ padding: 1em 1em;
+ text-decoration: none;
+ font-size: 1.0625em;
+ display: block;
+ font: 3.1em "Helvetica Neue LT W1G", Helvetica;
+ border-bottom: 1px solid rgb(226, 226, 226);
+ font-weight: 400;
+}
 }
 
 
-
-/* @media only screen and (max-width: 899px) {
+@media (max-width: 899px) {
  .mobile-container {
    display: block;
  }
  .desk-nav {
    display: none;
  }
+ .topnav {
+  overflow-y: scroll;
 }
-@keyframes slideInDown {
- from {
-   transform: translateY(-40%);
-   opacity: 0;
- }
- to {
-   transform: translateY(0);
-   opacity: 1;
- }
-} */
-
-.animated {
- animation-name: slideInDown;
- animation-duration: 0.8s;
 }
-
-.dropdown-header.active {
- color: #f03817;
- display: flex;
- align-items: center;
-}
-.dropdown-mid {
- position: absolute;
- top: 3.75em;
- left: 31.25em;
- display: flex;
- gap: 4em 6.25em;
- flex-wrap: wrap;
- width: 50em;
- white-space: pre;
-}
-.submenu {
- display: none;
- opacity: 0;
- transition: opacity 0.3s;
-}
-
-.submenu.visible {
- display: block;
- opacity: 1;
- animation-name: slideInDown;
- animation-duration: 0.8s;
-}
-.on {
- font-weight: bold !important;
-}
-.dropdown-mid > p {
- font: 1.25em Helvetica Neue LT W1G, Helvetica;
- font-weight: 400;
- line-height: 1.875em;
- text-align: center;
-}
-
-.submenu {
- display: none;
- opacity: 0;
- transition: opacity 0.3s;
-}
-
-.submenu.visible {
- display: block;
- opacity: 1;
- animation-name: slideInDown;
- animation-duration: 0.8s;
-}
-
-.button > a {
- font: 1.04em "Helvetica Neue LT W1G", Helvetica;
- text-decoration: none;
- color: #fff;
- position: relative;
- left: 0.6em;
- transition: 0.2s ease all;
-}
-
-.button:hover > a {
- left: 0em;
-}
-</style><div class="investor-container">
+</style>
+<div class="investor-container">
     <div class="investor-heading">
         <div class="investor-heading-item-1">
             <div>
@@ -4702,396 +4716,526 @@
 </style> -->
 <div class="footer">
     <div class="logo-footer">
-        <img src="./Images/Group.svg" alt="">
+      <img src="./Images/Group.svg" alt="" />
     </div>
     <div class="footer-first">
-        <p class="footer-first-top">About Thermo Fisher Scientific</p>
-        <p class="footer-first-mid">
-            Thermo Fisher Scientific Inc. (NYSE: TMO) is the world leader in
-            serving science, with annual revenue over $40 billion. Our Mission is
-            to enable our customers to make the world healthier, cleaner and
-            safer. Whether our customers are accelerating life sciences research,
-            solving complex analytical challenges, increasing productivity in
-            their laboratories, improving patient health through diagnostics or
-            the development and manufacture of life-changing therapies, we are
-            here to support them. Our global team delivers an unrivaled
-            combination of innovative technologies, purchasing convenience and
-            pharmaceutical services through our industry-leading brands, including
-            Thermo Scientific, Applied Biosystems, Invitrogen, Fisher Scientific,
-            Unity Lab Services, Patheon and PPD.
-        </p>
-        <p class="footer-first-bootom">
-            For more information, please visit
-            <a href="https://www.thermofisher.com" target="_blank" rel="noopener noreferrer">
-                <span>www.thermofisher.com</span>
-            </a>
-        </p>
+      <p class="footer-first-top">About Thermo Fisher Scientific</p>
+      <p class="footer-first-mid">
+        Thermo Fisher Scientific Inc. (NYSE: TMO) is the world leader in
+        serving science, with annual revenue over $40 billion. Our Mission is
+        to enable our customers to make the world healthier, cleaner and
+        safer. Whether our customers are accelerating life sciences research,
+        solving complex analytical challenges, increasing productivity in
+        their laboratories, improving patient health through diagnostics or
+        the development and manufacture of life-changing therapies, we are
+        here to support them. Our global team delivers an unrivaled
+        combination of innovative technologies, purchasing convenience and
+        pharmaceutical services through our industry-leading brands, including
+        Thermo Scientific, Applied Biosystems, Invitrogen, Fisher Scientific,
+        Unity Lab Services, Patheon and PPD.
+      </p>
+      <p class="footer-first-bootom">
+        For more information, please visit
+        <a
+          href="https://www.thermofisher.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>www.thermofisher.com</span>
+        </a>
+      </p>
     </div>
     <div class="footer-second">
-        <p class="footer-second-top">Company</p>
-        <p class="footer-second-p">Sustainability</p>
-        <p class="footer-second-p">Investors</p>
-        <p class="footer-second-p">Newsroom</p>
-        <p class="footer-second-p">Careers</p>
-        <p class="footer-second-p">About</p>
-        <p class="footer-second-p">Contact</p>
+      <p class="footer-second-top">Company</p>
+      <p class="footer-second-p">Sustainability</p>
+      <p class="footer-second-p">Investors</p>
+      <p class="footer-second-p">Newsroom</p>
+      <p class="footer-second-p">Careers</p>
+      <p class="footer-second-p">About</p>
+      <p class="footer-second-p">Contact</p>
     </div>
     <div class="footer-third">
-        <p class="footer-third-top">Brands</p>
-        <p class="footer-second-p">Thermo Scientific</p>
-        <p class="footer-second-p">Applied Biosystems</p>
-        <p class="footer-second-p">Invitrogen</p>
-        <p class="footer-second-p">Fisher Scientific</p>
-        <p class="footer-second-p">Unity Labs Services</p>
-        <p class="footer-second-p">Patheon</p>
-        <p class="footer-second-p">PPD</p>
+      <p class="footer-third-top">Brands</p>
+      <p class="footer-second-p">Thermo Scientific</p>
+      <p class="footer-second-p">Applied Biosystems</p>
+      <p class="footer-second-p">Invitrogen</p>
+      <p class="footer-second-p">Fisher Scientific</p>
+      <p class="footer-second-p">Unity Labs Services</p>
+      <p class="footer-second-p">Patheon</p>
+      <p class="footer-second-p">PPD</p>
     </div>
     <div class="footer-fourth">
-        <p class="footer-third-top">Connect</p>
-        <div class="footer-icons">
-            <div class="connect-top">
-                <a href="https://www.linkedin.com/company/thermo-fisher-scientific/" target="_blank" rel="noopener noreferrer">
-                    <img src="./Images/linkedin-161-svgrepo-com.svg" alt="LinkedIn">
-                </a>
-                <a href="./youtube.com/thermofisher" target="_blank" rel="noopener noreferrer">
-                    <img src="./Images/youtube-168-svgrepo-com.svg" alt="YouTube">
-                </a>
-                <a href="https://www.instagram.com/thermofisherscientific/" target="_blank" rel="noopener noreferrer">
-                    <img src="./Images/instagram-167-svgrepo-com.svg" alt="Instagram">
-                </a>
-            </div>
-            <div class="connect-bottom">
-                <a href="https://twitter.com/thermofisher" target="_blank" rel="noopener noreferrer">
-                    <img src="./Images/pajamas_twitter.svg" alt="Twitter">
-                </a>
-                <a href="https://www.facebook.com/thermofisher/" target="_blank" rel="noopener noreferrer">
-                    <img src="./Images/facebook-176-svgrepo-com.svg" alt="Facebook">
-                </a>
-            </div>
+      <p class="footer-third-top footer-third-connect">Connect</p>
+      <div class="footer-icons connet-desktop">
+        <div class="connect-top">
+          <a
+            href="https://www.linkedin.com/company/thermo-fisher-scientific/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/linkedin-161-svgrepo-com.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="./youtube.com/thermofisher"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/youtube-168-svgrepo-com.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://www.instagram.com/thermofisherscientific/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./Images/instagram-167-svgrepo-com.svg"
+              alt="Instagram"
+            />
+          </a>
         </div>
+        <div class="connect-bottom">
+          <a
+            href="https://twitter.com/thermofisher"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/pajamas_twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.facebook.com/thermofisher/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/facebook-176-svgrepo-com.svg" alt="Facebook" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-icons connet-mobile">
+        <div class="connect-top">
+          <a
+            href="https://www.linkedin.com/company/thermo-fisher-scientific/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/linkedin-161-svgrepo-com.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://twitter.com/thermofisher"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/Page-1.png" alt="Twitter" />
+          </a>
+          <a
+            href="./youtube.com/thermofisher"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/youtube-168-svgrepo-com.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://www.facebook.com/thermofisher/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./Images/facebook-176-svgrepo-com.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/thermofisherscientific/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./Images/instagram-167-svgrepo-com.svg"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
     </div>
-</div>
-<div class="pre-footer">
-    <img class="pre-footer-logo" src="./Images/Logo.svg" alt="sds">
+  </div>
+  <div class="pre-footer">
+    <img class="pre-footer-logo" src="./Images/Logo.svg" alt="sds" />
     <p class="pre-footer-first">
-        © Copyright 2006-2023 Thermo Fisher Scientific Inc. All rights reserved.
+      © Copyright 2006-2023 Thermo Fisher Scientific Inc. All rights reserved.
     </p>
-    <p class="pre-footer-second">Terms &amp; Conditions</p>
+    <p class="pre-footer-second">Terms & Conditions</p>
     <p class="pre-footer-third">Privacy Information Center</p>
-</div>
+  </div>
 
 <style>
-    /* @media (min-width: 900px) {
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-size: 1.1vw;
-        }
-    } */
-/* 
-    @media (max-width: 899px) {
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    } */
+     body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 1vw;
+ }
+.footer {
+ display: flex;
+ justify-content: space-between;
+ background-color: #4a4a4a;
+ padding: 1.7em 5.5em;
+ padding-right: 8em !important;
+}
 
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        background-color: #4a4a4a;
-        padding: 2.5em 2.5em;
-    }
+.footer-column {
+ flex: 1;
+}
 
-    .footer-column {
-        flex: 1;
-    }
+.footer-first-top {
+ font:
+   700 1.2em "Helvetica Neue LT W1G",
+   Helvetica,
+   sans-serif; /* 18px/24px */
+ margin-bottom: 0.625em;
+ color: #ebebec;
+}
 
-    .footer-first-top {
-        font: 700 1.125em/1.5em "Helvetica Neue LT W1G", Helvetica, sans-serif;
-        /* 18px/24px */
-        margin-bottom: 0.625em;
-        color: #ebebec;
-    }
+.footer-first-mid {
+ font:
+   1.1em "Helvetica Neue LT W1G",
+   Helvetica;
+ font-weight: 400;
+ line-height: 1.6em;
+ text-align: left;
+ color: #c9cacc;
+}
 
-    .footer-first-mid {
-        font: 1em "Helvetica Neue LT W1G", Helvetica;
-        font-weight: 400;
-        line-height: 1.75em;
-        text-align: left;
-        color: #c9cacc;
-    }
+.footer-first-bootom {
+ margin-top: 0.625em;
+ color: #c9cacc;
+ font:
+   1.1em "Helvetica Neue LT W1G",
+   Helvetica;
+   line-height: 1.5em;
+}
+.footer-first-bootom > a {
+ text-decoration: underline;
+ color: #c9cacc;
+ padding-top: 1em;
+}
+.footer-second {
+ font-family: "Helvetica Neue LT W1G", Helvetica;
+ font-size: 1em;
+ font-weight: 700;
+ line-height: 1.5em;
+ text-align: left;
+ color: #ffffff;
+}
 
-    .footer-first-bootom {
-        margin-top: 0.625em;
-        color: #c9cacc;
-        font: 1em "Helvetica Neue LT W1G", Helvetica;
-    }
+.footer-second-top {
+ color: #ebebec;
+ font:
+   1.1em "Helvetica Neue LT W1G",
+   Helvetica;
+ font-weight: 600;
+}
 
-    .footer-first-bootom>a {
-        text-decoration: underline;
-        color: #C9CACC;
-        padding-top: 1em;
-    }
+.footer-second-p {
+ color: white;
+ font:
+   1.1em "Helvetica Neue LT W1G",
+   Helvetica;
+ font-weight: 600;
+ cursor: pointer;
+ margin-top: 1em;
+ white-space: nowrap;
+}
 
-    .footer-second {
-        font-family: "Helvetica Neue LT W1G", Helvetica;
-        font-size: 1em;
-        font-weight: 700;
-        line-height: 1.5em;
-        text-align: left;
-        color: #ffffff;
-    }
+.footer-third-top {
+ color: #ebebec;
+ font:
+   1.1em "Helvetica Neue LT W1G",
+   Helvetica;
+ font-weight: 600;
+}
 
-    .footer-second-top {
-        color: #ebebec;
-        font-family: "Helvetica Neue LT W1G", Helvetica;
-    }
+.footer-third-p {
+ color: white;
+ font-family: "Helvetica Neue LT W1G", Helvetica;
+ font-size: 1em;
+ cursor: pointer;
+}
 
-    .footer-second-p {
-        color: white;
-        font-family: "Helvetica Neue LT W1G", Helvetica;
-        font-size: 1em;
-        cursor: pointer;
-        margin-top: 1em;
-        white-space: nowrap;
-    }
+.footer-fourth {
+ font-family: "Helvetica Neue LT W1G", Helvetica;
+ font-size: 1em;
+ font-weight: 700;
+ line-height: 2em;
+ text-align: left;
+ color: #ffffff;
+}
 
-    .footer-third {
-        font-family: "Helvetica Neue LT W1G", Helvetica;
-        font-size: 1em;
-        font-weight: 700;
-        line-height: 1.5em;
-        text-align: left;
-        color: #ffffff;
-    }
+.footer-fourth-top {
+ color: #ebebec;
+}
 
-    .footer-third-top {
-        color: #ebebec;
-        font-family: "Helvetica Neue LT W1G", Helvetica;
-        font-size: 1em;
-    }
+.pre-footer {
+ display: flex;
+ justify-content: space-between;
+ background-color: #4a4a4a;
+ padding: 1.7em 5em;
+ padding-right: 16em !important;
+ margin-top: 0.0625em;
+ align-items: center;
+}
 
-    .footer-third-p {
-        color: white;
-        font-family: "Helvetica Neue LT W1G", Helvetica;
-        font-size: 1em;
-        cursor: pointer;
-    }
+.pre-footer-logo {
+ height: 2.2em !important;
+ margin-top: 0em;
+ cursor: pointer;
+}
 
-    .footer-fourth {
-        font-family: "Helvetica Neue LT W1G", Helvetica;
-        font-size: 1em;
-        font-weight: 700;
-        line-height: 2em;
-        text-align: left;
-        color: #ffffff;
-    }
+.button > a {
+ text-decoration: none;
+ color: #fff;
+}
 
-    .footer-fourth-top {
-        color: #ebebec;
-    }
+.pre-footer-first {
+ color: #ebebec;
+ font:
+   1em "Helvetica Neue LT W1G",
+   Helvetica;
+ font-weight: 400;
+ line-height: 1.375em;
+ text-align: left;
+}
 
-    .pre-footer {
-        display: flex;
-        justify-content: space-between;
-        background-color: #4a4a4a;
-        padding: 2.5em 2.5em;
-        margin-top: 0.0625em;
-        align-items: center;
-    }
+.pre-footer-second {
+ color: #ebebec;
+ font:
+   1em "Helvetica Neue LT W1G",
+   Helvetica;
+ font-weight: 400;
+ line-height: 1.375em;
+ text-align: left;
+ cursor: pointer;
+}
 
-    .pre-footer-logo {
-        height: 2em !important;
-        margin-top: 0.625em;
-        cursor: pointer;
-    }
+.pre-footer-third {
+ color: #ebebec;
+ font:
+   1em "Helvetica Neue LT W1G",
+   Helvetica;
+ font-weight: 400;
+ line-height: 1.375em;
+ text-align: left;
+ cursor: pointer;
+}
 
-    .button>a {
-        text-decoration: none;
-        color: #fff;
-    }
+.footer-icons {
+ display: flex;
+ flex-direction: row;
+ gap: 1.25em;
+ margin-top: 1.5em;
+}
 
-    .pre-footer-first {
-        color: #ebebec;
-        font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-        font-weight: 400;
-        line-height: 1.375em;
-        text-align: left;
-    }
+.connect-top,
+.connect-bottom {
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+}
 
-    .pre-footer-second {
-        color: #ebebec;
-        font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-        font-weight: 400;
-        line-height: 1.375em;
-        text-align: left;
-        cursor: pointer;
-    }
+.connect-top > img,
+.connect-bottom > img {
+ margin-bottom: 0.625em;
+}
 
-    .pre-footer-third {
-        color: #ebebec;
-        font: 0.875em "Helvetica Neue LT W1G", Helvetica;
-        font-weight: 400;
-        line-height: 1.375em;
-        text-align: left;
-        cursor: pointer;
-    }
+.footer-first {
+ width: 50%;
+ padding-right: 6em;
+}
 
-    .footer-icons {
-        display: flex;
-        flex-direction: row;
-        gap: 1.25em;
-        margin-top: 1.5em;
-    }
+.main-btn-newsroom2 {
+ display: none;
+}
 
-    .connect-top,
-    .connect-bottom {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
+.hide {
+ display: none;
+}
 
-    .connect-top>img,
-    .connect-bottom>img {
-        margin-bottom: 0.625em;
-    }
+.our-story-mob {
+ display: none;
+}
 
-    .footer-first {
-        width: 50%;
-    }
+.newsroom-socials {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ width: 100%;
+ gap: 0.625em;
+ margin-top: -5.9em;
+ padding-right: 1.875em;
+}
 
-    .main-btn-newsroom2 {
-        display: none;
-    }
+.connect-top > a > img,
+.connect-bottom > a > img {
+ width: 1.7em;
+}
 
-    .hide {
-        display: none;
-    }
+.newsroom-socials > p {
+ font:
+   1.25em "Helvetica Neue LT W1G",
+   Helvetica;
+ color: gray;
+}
 
-    .our-story-mob {
-        display: none;
-    }
+.logo-footer {
+ display: none;
+}
 
-    .socials {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-        gap: 0.625em;
-        margin-top: -3.75em;
-        padding-right: 1.875em;
-    }
+.connet-mobile{
+ display: none;
+}
 
-    .connect-top>a>img,
-    .connect-bottom>a>img {
-        width: 1.5em;
-    }
+@media (max-width: 899px) {
+ .logo-footer {
+  display: block;
+  width: 100%;
+}
+.logo-footer > img {
+  width: 30em;
+  margin-bottom: 2.5em;
+}
 
-    .socials>p {
-        font: 1.25em "Helvetica Neue LT W1G", Helvetica;
-        color: gray;
-    }
+.carousel3-inner,
+.carousel2-inner {
+  gap: 15px;
+}
 
-    .logo-footer {
-        display: none;
-    }
-
-    @media (max-width:899px) {
-        .logo-footer {
-            display: block;
-            width: 100%;
-        }
-
-        .logo-footer>img {
-            width: 8em;
-            margin-bottom: 2.5em;
-        }
-
-        .footer-first {
-            width: 100%;
-            order: 2;
-            padding-top: 3em;
-        }
-
-        .pre-footer-logo {
-            display: none;
-        }
-
-        .footer-second {
-            width: 50%;
-            order: 1;
-        }
-
-        .pre-footer-first,
-        .pre-footer-second,
-        .pre-footer-third {
-            width: 100%;
-        }
-
-        .pre-footer-second {
-            order: 1;
-            padding: 1em 0;
-        }
-
-        .pre-footer-third {
-            order: 2;
-            padding: 2em 0;
-        }
-
-        .pre-footer-first {
-            order: 3;
-            width: 45%;
-        }
-
-        .footer-third {
-            width: 50%;
-            order: 1;
-        }
-
-        .footer-fourth {
-            width: 100%;
-            order: 4;
-        }
-
-        .footer-icons {
-            gap: 0;
-            margin-left: -0.5em;
-        }
-
-        .footer-third-top {
-            margin-top: 0em;
-            margin-left: 0.5em;
-        }
-
-        .connect-top,
-        .connect-bottom {
-            flex-direction: row;
-        }
-
-        .footer-icons a {
-            margin-left: 0.9375em;
-        }
-
-        .footer,
-        .pre-footer,
-        .csr-report-four {
-            flex-wrap: wrap;
-        }
-
-        .footer {
-            margin-top: 0;
-            padding: 2.5em 1em;
-        }
-
-        .pre-footer {
-            padding: 2.5em 1em;
-        }
-    }
+.main-btn-newsroom {
+  display: none;
+}
+.footer-first {
+  width: 100%;
+  order: 2;
+  padding-top: 3em;
+  padding-right: 0 !important;
+}
+.pre-footer-logo {
+  display: none;
+}
+.footer-second {
+  width: 50%;
+  order: 1;
+  margin-top: 3em;
+}
+.pre-footer-first,
+.pre-footer-second,
+.pre-footer-third {
+  width: 100%;
+}
+.pre-footer-second {
+  order: 1;
+  padding: 0em 0;
+}
+.pre-footer-third {
+  order: 2;
+  padding: 0em 0;
+}
+.pre-footer-first {
+  order: 3;
+  width: 55%;
+}
+.footer-third {
+  width: 50%;
+  order: 1;
+  margin-top: 3em;
+}
+.footer-fourth {
+  width: 100%;
+  order: 4;
+}
+.footer-icons {
+  gap: 0;
+  margin-left: -0.5em;
+}
+.connect-top > a > img, .connect-bottom > a > img {
+ width: 4.7em;
+}
+.connect-top,
+.connect-bottom {
+  flex-direction: row;
+  gap: 4em;
+}
+.footer-third-connect{
+  margin-top: 1em;
+}
+.connet-desktop{
+  display: none;
+}
+.connet-mobile{
+  display: block;
+}
+.connet-mobile > .connect-top {
+  align-items: center !important;
+}
+.footer-icons a {
+  margin-left: 0.9375em;
+}
+.footer,
+.pre-footer,
+.csr-report-four {
+  flex-wrap: wrap;
+}
+.footer {
+  margin-top: 0;
+  padding: 5.5em 4em;
+  padding-right: 1em !important;
+}
+.pre-footer {
+  padding: 5.5em 4em;
+  padding-right: 1em !important;
+}
+.footer-second-top {
+ color: #ebebec;
+ font: 4.1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 600;
+}
+.footer-third-top {
+ color: #ebebec;
+ font: 4.1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 600;
+}
+.footer-second-p {
+ color: white;
+ font: 4.1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 600;
+ cursor: pointer;
+ margin-top: 1em;
+ white-space: nowrap;
+}
+.footer-first-top {
+ font: 700 4.2em "Helvetica Neue LT W1G", Helvetica, sans-serif;
+ margin-bottom: 0.625em;
+ color: #ebebec;
+}
+.footer-first-mid {
+ font: 4.1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 1.6em;
+ text-align: left;
+ color: #c9cacc;
+ padding-right: 1em;
+}
+.footer-first-bootom {
+ margin-top: 0.625em;
+ color: #c9cacc;
+ font: 4.1em "Helvetica Neue LT W1G", Helvetica;
+ line-height: 1.5em;
+}
+.pre-footer-second, .pre-footer-third,.pre-footer-first {
+ color: #ebebec;
+ font: 4em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 1.375em;
+ text-align: left;
+ cursor: pointer;
+ margin: 0.5em;
+}
+}
 </style>
-
 
 
 <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div></body></html>

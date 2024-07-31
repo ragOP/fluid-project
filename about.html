@@ -384,6 +384,74 @@
           </div>
       </div>
   </div>
+  <div class="newsroom-mobile-diversity">
+    <div class="home-diversity-title">Our Stories</div>
+    <div class="carousel6">
+      <div class="carousel6-inner">
+        <div class="carousel6-item first-slider">
+          <div class="slider-left">
+            <img src="./assets/images/test.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              My work is a story of <span>problem solving 1</span>
+            </p>
+            <p class="slider-right-mid">
+              Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 1.
+            </p>
+          </div>
+        </div>
+        <div class="carousel6-item first-slider">
+          <div class="slider-left">
+            <img src="./assets/images/test.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              My work is a story of <span>problem solving 2</span>
+            </p>
+            <p class="slider-right-mid">
+              Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 2.
+            </p>
+          </div>
+        </div>
+        <div class="carousel6-item first-slider">
+          <div class="slider-left">
+            <img src="./assets/images/test.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              My work is a story of <span>problem solving 3</span>
+            </p>
+            <p class="slider-right-mid">
+              Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 3.
+            </p>
+          </div>
+        </div>
+        <div class="carousel6-item first-slider">
+          <div class="slider-left">
+            <img src="./assets/images/test.png" alt="Image 1" />
+          </div>
+          <div class="slider-right">
+            <p class="slider-right-top">
+              My work is a story of <span>problem solving 4</span>
+            </p>
+            <p class="slider-right-mid">
+              Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 4.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: start; justify-content: space-between; width: 100%;padding-bottom: 1em;">
+        <p
+          class="c-btn view view-mobile"
+          style="margin-left: 0;"
+        >
+          Read Full Story
+        </p>
+      <div class="carousel6-dots"></div>
+      </div>
+    </div>
+  </div>
     <div class="leadership">
       <p class="leadership-heading">LEADERSHIP</p>
       <div class="leadership-main">
@@ -650,8 +718,8 @@
         <p class="footer-second-p">PPD</p>
       </div>
       <div class="footer-fourth">
-        <p class="footer-third-top">Connect</p>
-        <div class="footer-icons">
+        <p class="footer-third-top footer-third-connect">Connect</p>
+        <div class="footer-icons connet-desktop">
           <div class="connect-top">
             <a
               href="https://www.linkedin.com/company/thermo-fisher-scientific/"
@@ -695,6 +763,48 @@
             </a>
           </div>
         </div>
+        <div class="footer-icons connet-mobile">
+          <div class="connect-top">
+            <a
+              href="https://www.linkedin.com/company/thermo-fisher-scientific/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./Images/linkedin-161-svgrepo-com.svg" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://twitter.com/thermofisher"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/images/Page-1.png" alt="Twitter" />
+            </a>
+            <a
+              href="./youtube.com/thermofisher"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./Images/youtube-168-svgrepo-com.svg" alt="YouTube" />
+            </a>
+            <a
+              href="https://www.facebook.com/thermofisher/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./Images/facebook-176-svgrepo-com.svg" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/thermofisherscientific/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./Images/instagram-167-svgrepo-com.svg"
+                alt="Instagram"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="pre-footer">
@@ -706,6 +816,47 @@
       <p class="pre-footer-third">Privacy Information Center</p>
     </div>
     <script src="about-script.js"></script>
+    <script>
+      const slides = document.querySelectorAll(".carousel6-item");
+      const dotsContainer = document.querySelector(".carousel6-dots");
+      let currentIndex6 = 0;
+
+      function showSlide6(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+        updateDots6(index);
+      }
+
+      function createDots6() {
+        slides.forEach((_, index) => {
+          const dot = document.createElement("span");
+          dot.addEventListener("click", () => {
+            showSlide6(index);
+            currentIndex6 = index;
+          });
+          dotsContainer.appendChild(dot);
+        });
+        dotsContainer.children[0].classList.add("active");
+      }
+
+      function updateDots6(index) {
+        const dots = dotsContainer.children;
+        Array.from(dots).forEach((dot, i) => {
+          dot.classList.toggle("active", i === index);
+        });
+      }
+
+      function nextSlide6() {
+        currentIndex6 = (currentIndex6 + 1) % slides.length;
+        showSlide6(currentIndex6);
+      }
+
+      createDots6();
+      showSlide6(currentIndex6);
+
+      setInterval(nextSlide6, 3000);
+    </script>
     <script>
       var dropdown1 = document.getElementsByClassName("dropdown-btn");
       console.log(dropdown);

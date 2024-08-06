@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="newsRoom.css">
     <link rel="stylesheet" href="CsrBanner.css"> -->
     <link rel="stylesheet" href="./csr/framwork.css">
-    <script src="header.js"></script>
     <style>
         body{
             margin: 0;
@@ -17,6 +16,30 @@
             font-size: 1vw;
             font-family: "Helvetica Neue LT W1G", Helvetica;
         }
+        .on {
+  font-weight: bold !important;
+}
+.submenu.visible {
+  display: block;
+  opacity: 1;
+  animation-name: slideInDown;
+  animation-duration: 0.8s;
+}
+@keyframes slideInDown {
+  from {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-name: slideInDown;
+  animation-duration: 0.8s;
+}
     </style>
 <script>window.isVuexExtensionEnabled = true;window.vuexExtensionVersion = "1.0.6"</script><style type="text/css">
 @font-face {
@@ -214,7 +237,7 @@
 </script>
 <div class="desk-nav">
     <div class="navbar">
-        <a href="/Pages/HomePage/Home.html">
+        <a href="./index.html">
             <div class="navlogo">
                 <img id="logo" src="./Images/logo.png" alt="">
             </div>
@@ -223,16 +246,16 @@
             <div class="menu">
                 <ul>
                     <li id="about-menu-item" class="">
-                        <a id="about-link" class="on" href="../about.html">ABOUT</a>
+                        <a id="about-link" href="./about.html">ABOUT</a>
                     </li>
                     <li id="csr-menu-item" class="">
-                        <a id="csr-link" class="" href="../CSR/Csr.html">CORPORATE SOCIAL RESPONSIBILITY</a>
+                        <a id="csr-link" class="" href="./csr.html">CORPORATE SOCIAL RESPONSIBILITY</a>
                     </li>
                     <li id="investor-menu-item" class="">
-                        <a id="investor-link" class="" href="javascript:void(0)">INVESTOR</a>
+                        <a id="investor-link" class="on" href="javascript:void(0)">INVESTOR</a>
                     </li>
                     <li id="newsroom-menu-item" class="">
-                        <a id="newsroom-link" class="" href="javascript:void(0)">NEWSROOM</a>
+                        <a id="newsroom-link" class="" href="./index.html">NEWSROOM</a>
                     </li>
                     <li id="career-menu-item" class="">
                         <a id="career-link" class="" href="/career">CAREER</a>
@@ -276,6 +299,9 @@
                         <img src="./Images/Icon1.png" alt="">
                         <p class="heder-drop">Financials</p>
                     </div>
+                    <div class="submenu animated">
+                        <p style="cursor: pointer">Financials 1</p>
+                      </div>
                 </div>
                 <div class="main-dropdown">
                     <div class="dropdown-header">
@@ -310,9 +336,11 @@
 </div>
 <script>
     let toggle = true;
-    const newsroomLink = document.getElementById("newsroom-link");
+    const newsroomLink = document.getElementById("investor-link");
     const dropdown5 = document.getElementById("dropdown");
     const blurOverlay = document.getElementById("blur-overlay");
+
+    newsroomLink.classList.add('active-link');
 
     function toggleDropdown() {
         if (toggle) {
@@ -375,34 +403,33 @@
         });
     }
     const dropdown = document.getElementById("dropdown");
-    const about = document.getElementById("about-link");
     const investor = document.getElementById("investor-link");
     console.log(dropdown);
 
     if (dropdown.style.display === "block") {
-        about.classList.add("on");
+        investor.classList.add("on");
     } else {
-        about.classList.add("on");
+        investor.classList.add("on");
     }
-    about.addEventListener("click", () => {
+    investor.addEventListener("click", () => {
         if (dropdown.style.display === "block") {
             dropdown.style.display = "none";
-            about.classList.add("on");
+            investor.classList.add("on");
             console.log(ok);
         } else {
             dropdown.style.display = "block";
-            about.classList.add("on");
+            investor.classList.add("on");
             console.log(ok);
         }
     });
     investor.addEventListener("click", () => {
         if (dropdown.style.display === "block") {
             dropdown.style.display = "none";
-            about.classList.add("on");
+            investor.classList.add("on");
             console.log(ok);
         } else {
             dropdown.style.display = "block";
-            about.classList.add("on");
+            investor.classList.add("on");
             console.log(ok);
         }
     });
@@ -506,7 +533,7 @@
  align-items: center;
  background-color: #fff;
  height: 8%;
- top: 1em;
+ top: 0em;
  padding: 0 4em;
  z-index: 10000;
 }
@@ -700,14 +727,14 @@
  opacity: 1;
 }
 
-.menu ul li.active::after {
- content: "";
- position: absolute;
- bottom: -1em;
- left: -0.625em;
- width: 95%;
- height: 0.1875em;
- background-color: red;
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1.35em;
+  left: 0.06em;
+  width: 100%;
+  height: 0.1875em;
+  background-color: red;
 }
 .menu ul li:hover::after {
  content: "";
@@ -720,6 +747,11 @@
 }
 .menu ul li a.active {
  font-weight: bold;
+}
+.dropdown-header.active {
+  color: #f03817;
+  display: flex;
+  align-items: center;
 }
 
 .menu ul a {
@@ -872,7 +904,7 @@
 }
 .dropdown-right {
  position: absolute;
- bottom: -0.395em;
+ bottom: 0em;
  right: 0;
 }
 .dropdown-right > img {
@@ -901,7 +933,18 @@
  justify-content: start;
  flex-direction: column;
 }
+.dropdown-mid {
+  position: absolute;
+  top: 3.75em;
+  left: 31.25em;
+  display: flex;
+  gap: 4em 6.25em;
+  flex-wrap: wrap;
+  width: 50em;
+  white-space: pre;
+}
 .submenu {
+    display: none;
  margin-left: 1.6875em;
  padding-top: 0.625em;
 }

@@ -184,7 +184,7 @@
     </script>
     <div class="desk-nav">
       <div class="navbar">
-        <a href="/Pages/HomePage/Home.html">
+        <a href="./index.html">
           <div class="navlogo">
             <img id="logo" src="./Images/logo.png" alt="" />
           </div>
@@ -193,15 +193,15 @@
           <div class="menu">
             <ul>
               <li id="about-menu-item" class="">
-                <a id="about-link" class="" href="../about.html">ABOUT</a>
+                <a id="about-link" class="" href="./about.html">ABOUT</a>
               </li>
               <li id="csr-menu-item" class="">
-                <a id="csr-link" class="" href="../CSR/Csr.html"
+                <a id="csr-link" class="" href="./csr.html"
                   >CORPORATE SOCIAL RESPONSIBILITY</a
                 >
               </li>
               <li id="investor-menu-item" class="">
-                <a id="investor-link" class="" href="../CSR/Csr.html"
+                <a id="investor-link" class="" href="./investor.html"
                   >INVESTOR</a
                 >
               </li>
@@ -252,6 +252,9 @@
               <div class="dropdown-header">
                 <img src="./Images/Icon1.png" alt="" />
                 <p class="heder-drop">Press Releases</p>
+              </div>
+              <div class="submenu animated">
+                <p style="cursor: pointer">Press Releases 1</p>
               </div>
             </div>
             <div class="main-dropdown">
@@ -464,7 +467,7 @@
           <div>
             <div>
               <p class="newsroom-diversity-content-head">
-                My work is a story of problem solving.
+                My work is a story of <span style="font-weight: 700;">problem solving.</span>
               </p>
             </div>
             <div>
@@ -478,7 +481,7 @@
               <img src="./Images/redsmall.svg" /> Read full story
             </div>
           </div>
-          <div class="newsroom-diver-next">
+          <div class="newsroom-diver-next" style="display: none">
             <img
               src="./Images/arrow-left.svg"
               onclick="handlePrev()"
@@ -493,6 +496,12 @@
               id="nextBtn"
             />
           </div>
+        </div>
+        <div class="dots">
+          <span class="dot-btn active"></span>
+          <span class="dot-btn"></span>
+          <span class="dot-btn"></span>
+          <span class="dot-btn"></span>
         </div>
       </div>
     </div>
@@ -509,7 +518,10 @@
                 My work is a story of <span>problem solving 1</span>
               </p>
               <p class="slider-right-mid">
-                Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 1.
+                Born almost three months premature, I grew up passionate about
+                healthcare and cutting-edge technologies to create better health
+                outcomes. My attraction to Thermo Fisher Scientific was simple:
+                the chance to make a positive impact through problem solving 1.
               </p>
             </div>
           </div>
@@ -522,7 +534,10 @@
                 My work is a story of <span>problem solving 2</span>
               </p>
               <p class="slider-right-mid">
-                Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 2.
+                Born almost three months premature, I grew up passionate about
+                healthcare and cutting-edge technologies to create better health
+                outcomes. My attraction to Thermo Fisher Scientific was simple:
+                the chance to make a positive impact through problem solving 2.
               </p>
             </div>
           </div>
@@ -535,7 +550,10 @@
                 My work is a story of <span>problem solving 3</span>
               </p>
               <p class="slider-right-mid">
-                Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 3.
+                Born almost three months premature, I grew up passionate about
+                healthcare and cutting-edge technologies to create better health
+                outcomes. My attraction to Thermo Fisher Scientific was simple:
+                the chance to make a positive impact through problem solving 3.
               </p>
             </div>
           </div>
@@ -548,19 +566,27 @@
                 My work is a story of <span>problem solving 4</span>
               </p>
               <p class="slider-right-mid">
-                Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving 4.
+                Born almost three months premature, I grew up passionate about
+                healthcare and cutting-edge technologies to create better health
+                outcomes. My attraction to Thermo Fisher Scientific was simple:
+                the chance to make a positive impact through problem solving 4.
               </p>
             </div>
           </div>
         </div>
-        <div style="display: flex; align-items: start; justify-content: space-between; width: 100%;padding-bottom: 1em;">
-          <p
-            class="c-btn view view-mobile"
-            style="margin-left: 0;"
-          >
+        <div
+          style="
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 1em;
+          "
+        >
+          <p class="c-btn view view-mobile" style="margin-left: 0">
             Read Full Story
           </p>
-        <div class="carousel6-dots"></div>
+          <div class="carousel6-dots"></div>
         </div>
       </div>
     </div>
@@ -1374,6 +1400,8 @@
       const dropdown5 = document.getElementById("dropdown");
       const blurOverlay = document.getElementById("blur-overlay");
 
+      newsroomLink.classList.add("active-link");
+
       function toggleDropdown() {
         if (toggle) {
           dropdown5.style.display = "none";
@@ -1486,6 +1514,9 @@
       }
     </script>
     <script>
+      let counter = 0;
+      const maxRuns = 3;
+
       function handleNext() {
         const slider = document.getElementById("sliderdiv");
         const ele1 = document.getElementById("1");
@@ -1497,9 +1528,6 @@
 
         const secondChild = ele1.nextElementSibling;
 
-        // ele2.style.position = 'relative';
-        // secondChild.style.position = 'relative';
-
         if (parseInt(secondChild.id) === 2) {
           ele2.style.transform = "translateX(-42em)";
           secondChild.style.left = "0%";
@@ -1508,9 +1536,10 @@
             secondChild.style.left = "0%";
             ele2.style.transform = "translateX(0em)";
             paraContent.innerHTML =
-              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints.";
+              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints 2";
             pageNo.innerText = 2;
             slider.insertBefore(secondChild, ele1);
+            updateDots11(2);
           }, 500);
         }
         if (parseInt(secondChild.id) === 3) {
@@ -1521,10 +1550,11 @@
             ele3.style.transform = "translateX(0em)";
             secondChild.style.left = "0%";
             paraContent.innerHTML =
-              "Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific.";
+              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints 3";
             pageNo.innerText = 3;
             const nextChild = ele1.previousElementSibling;
             slider.insertBefore(secondChild, nextChild);
+            updateDots11(3);
           }, 500);
         }
         if (parseInt(secondChild.id) === 4) {
@@ -1535,9 +1565,10 @@
             ele4.style.transform = "translateX(0em)";
             secondChild.style.left = "0%";
             paraContent.innerHTML =
-              "Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes.";
+              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints 4"
             pageNo.innerText = 4;
             slider.insertBefore(secondChild, ele3);
+            updateDots11(4);
           }, 500);
         }
       }
@@ -1561,10 +1592,11 @@
             secondChild.style.left = "0%";
             ele2.style.transform = "translateX(0em)";
             paraContent.innerHTML =
-              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints.";
+              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints 3";
             pageNo.innerText = 3;
             const nextChild = ele1.nextElementSibling;
             slider.insertBefore(secondChild, nextChild);
+            updateDots11(3);
           }, 500);
         }
 
@@ -1576,11 +1608,12 @@
             ele3.style.transform = "translateX(0em)";
             secondChild.style.left = "0%";
             paraContent.innerHTML =
-              "Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific.";
+              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints 2";
             pageNo.innerText = 2;
             const nextChild = ele1.nextElementSibling;
             const nextChildof = nextChild.nextElementSibling;
             slider.insertBefore(secondChild, nextChildof);
+            updateDots11(2);
           }, 500);
         }
         if (parseInt(secondChild.id) === 4) {
@@ -1591,12 +1624,49 @@
             ele4.style.transform = "translateX(0em)";
             secondChild.style.left = "0%";
             paraContent.innerHTML =
-              "Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes.";
+              "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints";
             pageNo.innerText = 1;
             slider.append(secondChild);
+            updateDots11(1);
           }, 500);
         }
       }
+
+      function updateDots11(currentSlide) {
+        const dots = document.querySelectorAll(".dot-btn");
+        dots.forEach((dot, index) => {
+          if (index + 1 === currentSlide) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function currentSlide(n) {
+        counter = (n - 1) * maxRuns;
+        updateDots11(n);
+      }
+
+      function runCycle() {
+        if (counter < maxRuns) {
+          handleNext();
+        } else if (counter < maxRuns * 2) {
+          handlePrev();
+        }
+
+        counter++;
+
+        if (counter >= maxRuns * 2) {
+          counter = 0;
+        }
+
+        setTimeout(runCycle, 3000);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(runCycle, 3000);
+      });
     </script>
   </body>
 </html>
